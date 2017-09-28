@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B5D7C4B71F7D3B5500BCBE7E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C4B61F7D3B5500BCBE7E /* main.cpp */; };
+		B5D7C4C11F7D3BBE00BCBE7E /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C4BF1F7D3BBE00BCBE7E /* World.cpp */; };
+		B5D7C4C41F7D3BE100BCBE7E /* Spot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C4C21F7D3BE100BCBE7E /* Spot.cpp */; };
+		B5D7C4C71F7D3BEA00BCBE7E /* Creature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C4C51F7D3BEA00BCBE7E /* Creature.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,14 @@
 /* Begin PBXFileReference section */
 		B5D7C4B31F7D3B5500BCBE7E /* Evol'artist */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Evol'artist"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D7C4B61F7D3B5500BCBE7E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B5D7C4BF1F7D3BBE00BCBE7E /* World.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = World.cpp; sourceTree = "<group>"; };
+		B5D7C4C01F7D3BBE00BCBE7E /* World.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = World.hpp; sourceTree = "<group>"; };
+		B5D7C4C21F7D3BE100BCBE7E /* Spot.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Spot.cpp; sourceTree = "<group>"; };
+		B5D7C4C31F7D3BE100BCBE7E /* Spot.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Spot.hpp; sourceTree = "<group>"; };
+		B5D7C4C51F7D3BEA00BCBE7E /* Creature.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Creature.cpp; sourceTree = "<group>"; };
+		B5D7C4C61F7D3BEA00BCBE7E /* Creature.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Creature.hpp; sourceTree = "<group>"; };
+		B5D7C4C91F7D534F00BCBE7E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B5D7C4CA1F7D534F00BCBE7E /* ideas */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ideas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +52,8 @@
 		B5D7C4AA1F7D3B5400BCBE7E = {
 			isa = PBXGroup;
 			children = (
+				B5D7C4CA1F7D534F00BCBE7E /* ideas */,
+				B5D7C4C91F7D534F00BCBE7E /* README.md */,
 				B5D7C4B51F7D3B5500BCBE7E /* Evol'artist */,
 				B5D7C4B41F7D3B5500BCBE7E /* Products */,
 			);
@@ -57,9 +70,31 @@
 		B5D7C4B51F7D3B5500BCBE7E /* Evol'artist */ = {
 			isa = PBXGroup;
 			children = (
-				B5D7C4B61F7D3B5500BCBE7E /* main.cpp */,
+				B5D7C4BD1F7D3B9C00BCBE7E /* src */,
 			);
 			path = "Evol'artist";
+			sourceTree = "<group>";
+		};
+		B5D7C4BD1F7D3B9C00BCBE7E /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B5D7C4BE1F7D3BAB00BCBE7E /* simulEngine */,
+				B5D7C4B61F7D3B5500BCBE7E /* main.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B5D7C4BE1F7D3BAB00BCBE7E /* simulEngine */ = {
+			isa = PBXGroup;
+			children = (
+				B5D7C4BF1F7D3BBE00BCBE7E /* World.cpp */,
+				B5D7C4C01F7D3BBE00BCBE7E /* World.hpp */,
+				B5D7C4C21F7D3BE100BCBE7E /* Spot.cpp */,
+				B5D7C4C31F7D3BE100BCBE7E /* Spot.hpp */,
+				B5D7C4C51F7D3BEA00BCBE7E /* Creature.cpp */,
+				B5D7C4C61F7D3BEA00BCBE7E /* Creature.hpp */,
+			);
+			path = simulEngine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D7C4C71F7D3BEA00BCBE7E /* Creature.cpp in Sources */,
+				B5D7C4C41F7D3BE100BCBE7E /* Spot.cpp in Sources */,
+				B5D7C4C11F7D3BBE00BCBE7E /* World.cpp in Sources */,
 				B5D7C4B71F7D3B5500BCBE7E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
