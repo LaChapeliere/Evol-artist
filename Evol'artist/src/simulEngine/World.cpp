@@ -69,6 +69,7 @@ void World::removeCreature(const int creatureId) {
         if (creatureId == m_creatures[i]->getId()) {
             coord = m_creatures[i]->getCoord();
             indexInMCreatures = i;
+            creaturePtr = m_creatures[i];
             break;
         }
     }
