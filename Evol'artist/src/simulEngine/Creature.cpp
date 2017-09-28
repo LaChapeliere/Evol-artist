@@ -98,7 +98,7 @@ void Creature::perceiveLocalEnv(World const* world) {
             Spot const* spot = world->getPointerToSpot(xWorld, yWorld);
             // For now, compute score depending on the food available and the availability of other creatures on the spot
             int score = round(spot->getFood() / 10.0);
-            if (spot->getNbCreatures() > 0) {
+            if (spot->getNbCreatures() > 0 && !(xWorld == m_x && yWorld == m_y)) {
                 score += 5;
             }
             
