@@ -146,16 +146,30 @@ public:
     
     /**
      * Move the creature towards the visible spot with highest feeding power
+     * @param worldSize The size of the world grid
      * @return The pair of new horizontal and vertical coordinates
      */
-    const std::pair<int, int> move();
+    const std::pair<int, int> move(const int worldSize);
     
     /**
      * Determine the target for moving, in the local perception map
-     * @return The pair of horizontal and vertical coordinates of the target, possibly in negative coord
+     * @return The pair of horizontal and vertical coordinates of the target
      */
     const std::pair<int, int> findTarget();
     
 };
+
+// Declaration of the A* utility function
+/**
+ * A Function to find the shortest path between a given source cell to a destination cell according to A* Search Algorithm
+ * @param grid Reference to a flattened grid matrix with the scores
+ * @param src The coordinates of the source in the grid
+ * @param dest The coordinates of the target in the grid
+ * @param moveCap The maximum number of moves
+ * @param maxScore The maximum score for a Spot in the grid
+ * @return The coordinates of the Spot reached after moveCap moves on the shortest path to the target
+ */
+std::pair<int, int> aStarSearch(std::vector<int>& grid, std::pair<int, int> src, std::pair<int, int> dest, const int moveCap, const int maxScore);
+
 
 #endif /* Creature_hpp */

@@ -108,7 +108,7 @@ void Creature::perceiveLocalEnv(World const* world) {
     }
 }
 
-const std::pair<int, int> Creature::move() {
+const std::pair<int, int> Creature::move(const int worldSize) {
     // Find best target
     const std::pair<int, int> target = findTarget();
     
@@ -126,44 +126,22 @@ const std::pair<int, int> Creature::move() {
     }
     // If target not directly accessible
     else {
-        // Dummy version, alternating horizontal and vertical moves
-        int moves = 0;
-        int tempX = m_x;
-        int tempY = m_y;
-        while (moves < m_moveCap) {
-            if (moves % 2 == 0 && targetX != tempX) {
-                //Horizontal move
-                if (tempX > targetX) {
-                    tempX--;
-                }
-                else {
-                    tempX++;
-                }
+        // Make a world grid with the local environement evaluation
+        std::vector<int> worldEnv;
+        const int localEnvSize = m_maxPercepCap*2+1;
+        worldEnv.assign(worldSize*worldSize, 0);
+        for (int y = 0; y < localEnvSize; y++) {
+            for (int x = 0; x < localEnvSize; x++) {
+                const int worldY = (y + m_y - m_maxPercepCap + worldSize) % worldSize;
+                const int worldX = (x + m_x - m_maxPercepCap + worldSize) % worldSize;
+                worldEnv[worldY * worldSize + worldX] = m_env[y * localEnvSize + x];
             }
-            else if (targetY != tempY) {
-                // Vertical move
-                if (tempY > targetY) {
-                    tempY--;
-                }
-                else {
-                    tempY++;
-                }
-            }
-            else {
-                // Horizontal move
-                if (tempX > targetX) {
-                    tempX--;
-                }
-                else {
-                    tempX++;
-                }
-            }
-            moves++;
         }
-        // To be implemented: A*
-        m_x = tempX;
-        m_y = tempY;
-        return std::pair<int, int>(tempX, tempY);
+        // Compute best path to target with A* and find the fartherest point the Creature can go to along the path
+        std::pair<int, int> stopPointAstar = aStarSearch(worldEnv, std::make_pair(m_x, m_y), target, m_moveCap, 20);
+        m_x = (stopPointAstar.first + worldSize) % worldSize;
+        m_y = (stopPointAstar.second + worldSize) % worldSize;
+        return std::make_pair(m_x, m_y);
     }
 }
 

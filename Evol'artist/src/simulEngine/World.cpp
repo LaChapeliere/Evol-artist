@@ -101,9 +101,7 @@ void World::moveCreatures() {
     for (int c = 0; c < m_creatures.size(); c++) {
         //Perform move of Creature
         const std::pair<int, int> oldCoord = m_creatures[c]->getCoord();
-        std::pair<int, int> newCoord = m_creatures[c]->move(); // Possibly negative coordinates
-        newCoord.first = (newCoord.first + m_size) % m_size;
-        newCoord.second = (newCoord.second + m_size) % m_size;
+        std::pair<int, int> newCoord = m_creatures[c]->move(m_size);
         
         //Update the grid
         if (oldCoord.first!=newCoord.first || oldCoord.second!=newCoord.second) {
