@@ -106,7 +106,7 @@ void World::moveCreatures() {
         //Perform move of Creature
         const std::pair<int, int> oldCoord = m_creatures[c]->getCoord();
         std::pair<int, int> newCoord = m_creatures[c]->move(m_size);
-        
+
         //Update the grid
         if (oldCoord.first!=newCoord.first || oldCoord.second!=newCoord.second) {
             //Remove Creature from old Spot
@@ -124,8 +124,8 @@ void World::interactBtwCreatures() {
         for (int y = 0; y < m_size; y++) {
             if (m_grid[y * m_size + x].getNbCreatures() > 1) {
                 //Create creature
-                int newX = (x + (rand() % 2 - 1)) % m_size;
-                int newY = (y + (rand() % 2 - 1)) % m_size;
+                int newX = (x + (rand() % 2 - 1) + m_size) % m_size;
+                int newY = (y + (rand() % 2 - 1) + m_size) % m_size;
                 m_lastCreatureId++;
                 Creature* newCreaturePtr = new Creature(m_lastCreatureId, newX, newY);
                 m_toBeBornCreatures.push_back(newCreaturePtr);
@@ -155,7 +155,7 @@ void World::resolveTurn() {
     for (int c = 0; c < m_toBeBornCreatures.size(); c++) {
         m_creatures.push_back(m_toBeBornCreatures[c]);
         const std::pair<int, int> coord = m_toBeBornCreatures[c]->getCoord();
-        
+
         //Add creature to grid
         m_grid[coord.first + coord.second * m_size].addCreature(m_creatures[m_creatures.size() -1]);
     }

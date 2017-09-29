@@ -113,8 +113,8 @@ const std::pair<int, int> Creature::move(const int worldSize) {
     const std::pair<int, int> target = findTarget();
     
     // Put target coordinate in world space
-    const int targetX = m_x + target.first - m_maxPercepCap;
-    const int targetY = m_y + target.second - m_maxPercepCap;
+    const int targetX = (m_x + target.first - m_maxPercepCap + worldSize) % worldSize;
+    const int targetY = (m_y + target.second - m_maxPercepCap + worldSize) % worldSize;
     const int distToTarget = sqrt(pow((targetX - m_x), 2)) + sqrt(pow((targetY - m_y), 2));
     
     // Move as far as possible toward target
@@ -138,9 +138,10 @@ const std::pair<int, int> Creature::move(const int worldSize) {
             }
         }
         // Compute best path to target with A* and find the fartherest point the Creature can go to along the path
-        std::pair<int, int> stopPointAstar = aStarSearch(worldEnv, std::make_pair(m_x, m_y), target, m_moveCap, 20);
+        std::pair<int, int> stopPointAstar = aStarSearch(worldEnv, std::make_pair(m_x, m_y), std::make_pair(targetX, targetY), m_moveCap, 20);
         m_x = (stopPointAstar.first + worldSize) % worldSize;
         m_y = (stopPointAstar.second + worldSize) % worldSize;
+        
         return std::make_pair(m_x, m_y);
     }
 }
