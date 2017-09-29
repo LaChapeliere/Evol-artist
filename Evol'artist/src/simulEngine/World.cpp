@@ -39,6 +39,10 @@ const int World::getIncubTime() const {
     return m_incubationTime;
 }
 
+const int World::getNbCreatures() const {
+    return (int)m_creatures.size();
+}
+
 Spot const* World::getPointerToSpot(const int x, const int y) const {
     return &(m_grid[y * m_size + x]);
 }

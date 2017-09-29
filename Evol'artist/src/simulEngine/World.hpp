@@ -81,6 +81,12 @@ public:
     const int getIncubTime() const;
     
     /**
+    * Get the number of Creature objects in the world
+    * @return m_creatures.size()
+    */
+    const int getNbCreatures() const;
+    
+    /**
      * Accessor by pointer to Spots in the grid
      * @param x The horizontal coordinate of the desired Spot in the grid
      * @param y The vertical coordinate of the desired Spot in the grid
