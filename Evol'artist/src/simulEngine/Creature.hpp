@@ -5,6 +5,7 @@
 //  Created by Emma Barme on 28/09/2017.
 //  Copyright GNU General Public License v3.0
 //
+//  Last modified by Emma Barme on 29/09/2017
 
 #ifndef Creature_hpp
 #define Creature_hpp
@@ -148,6 +149,12 @@ public:
      * @return The pair of new horizontal and vertical coordinates
      */
     const std::pair<int, int> move();
+    
+    /**
+     * Determine the target for moving, in the local perception map
+     * @return The pair of horizontal and vertical coordinates of the target, possibly in negative coord
+     */
+    const std::pair<int, int> findTarget();
     
 };
 

@@ -5,6 +5,7 @@
 //  Created by Emma Barme on 28/09/2017.
 //  Copyright GNU General Public License v3.0
 //
+//  Last modified by Emma Barme on 29/09/2017
 
 #include "Creature.hpp"
 #include "World.hpp"
@@ -108,6 +109,81 @@ void Creature::perceiveLocalEnv(World const* world) {
 }
 
 const std::pair<int, int> Creature::move() {
-    //Dummy implementation, no move
-    return getCoord();
+    // Find best target
+    const std::pair<int, int> target = findTarget();
+    
+    // Put target coordinate in world space
+    const int targetX = m_x + target.first - m_maxPercepCap;
+    const int targetY = m_y + target.second - m_maxPercepCap;
+    const int distToTarget = sqrt(pow((targetX - m_x), 2)) + sqrt(pow((targetY - m_y), 2));
+    
+    // Move as far as possible toward target
+    // If target is directly accessible
+    if (distToTarget <= m_moveCap) {
+        m_x = targetX;
+        m_y = targetY;
+        return std::pair<int, int>(targetX, targetY);
+    }
+    // If target not directly accessible
+    else {
+        // Dummy version, alternating horizontal and vertical moves
+        int moves = 0;
+        int tempX = m_x;
+        int tempY = m_y;
+        while (moves < m_moveCap) {
+            if (moves % 2 == 0 && targetX != tempX) {
+                //Horizontal move
+                if (tempX > targetX) {
+                    tempX--;
+                }
+                else {
+                    tempX++;
+                }
+            }
+            else if (targetY != tempY) {
+                // Vertical move
+                if (tempY > targetY) {
+                    tempY--;
+                }
+                else {
+                    tempY++;
+                }
+            }
+            else {
+                // Horizontal move
+                if (tempX > targetX) {
+                    tempX--;
+                }
+                else {
+                    tempX++;
+                }
+            }
+            moves++;
+        }
+        // To be implemented: A*
+        m_x = tempX;
+        m_y = tempY;
+        return std::pair<int, int>(tempX, tempY);
+    }
+}
+
+const std::pair<int, int> Creature::findTarget() {
+    const int localEnvSize = m_maxPercepCap*2+1;
+    
+    // Find maximum value in the local environment
+    int maxScore = -1000;
+    int bestX = 0;
+    int bestY = 0;
+    
+    for (int x = 0; x < localEnvSize; x++) {
+        for (int y = 0; y < localEnvSize; y++) {
+            if (m_env[y * localEnvSize + x] > maxScore) {
+                maxScore = m_env[y * localEnvSize + x];
+                bestX = x;
+                bestY = y;
+            }
+        }
+    }
+    
+    return std::pair<int, int>(bestX, bestY);
 }

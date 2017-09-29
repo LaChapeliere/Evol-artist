@@ -5,6 +5,8 @@
 //  Created by Emma Barme on 28/09/2017.
 //  Copyright GNU General Public License v3.0
 //
+//  Last modified by Emma Barme on 29/09/2017
+
 
 #include "Spot.hpp"
 
@@ -17,7 +19,7 @@ const int Spot::getFood() const {
 }
 
 const int Spot::getNbCreatures() const {
-    return m_creatures.size();
+    return (int)m_creatures.size();
 }
 
 Creature* Spot::getCreatureFromIndex(const int id) const {
@@ -29,7 +31,7 @@ void Spot::growFood() {
 }
 
 void Spot::feedCreatures() {
-    const int nbCreatures = m_creatures.size();
+    const int nbCreatures = (int)m_creatures.size();
     if (nbCreatures > 0) {
         int share = m_food / nbCreatures;
         //Each Creature present on the spot gets an equal share of the food

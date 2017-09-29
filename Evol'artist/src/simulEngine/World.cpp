@@ -5,6 +5,7 @@
 //  Created by Emma Barme on 28/09/2017.
 //  Copyright GNU General Public License v3.0
 //
+//  Last modified by Emma Barme on 29/09/2017
 
 #include "World.hpp"
 
@@ -100,10 +101,12 @@ void World::moveCreatures() {
     for (int c = 0; c < m_creatures.size(); c++) {
         //Perform move of Creature
         const std::pair<int, int> oldCoord = m_creatures[c]->getCoord();
-        const std::pair<int, int> newCoord = m_creatures[c]->move();
+        std::pair<int, int> newCoord = m_creatures[c]->move(); // Possibly negative coordinates
+        newCoord.first = (newCoord.first + m_size) % m_size;
+        newCoord.second = (newCoord.second + m_size) % m_size;
         
         //Update the grid
-        if (oldCoord.first!=newCoord.first && oldCoord.second!=newCoord.second) {
+        if (oldCoord.first!=newCoord.first || oldCoord.second!=newCoord.second) {
             //Remove Creature from old Spot
             m_grid[oldCoord.second * m_size + oldCoord.first].removeCreature(m_creatures[c]->getId());
             //Add Creature to new Spot
@@ -131,14 +134,14 @@ void World::interactBtwCreatures() {
 
 void World::interactCreaturesEnv() {
     //For each Spot
-    for (int s = 0; s < m_grid.size(); s++) {
+    for (int s = 0; s < (int)m_grid.size(); s++) {
         m_grid[s].feedCreatures();
     }
 }
 
 void World::resolveTurn() {
     //Update health and hunger for each Creature, then check if it's alive, remove it if not
-    for (int c = m_creatures.size() - 1; c >= 0; c--) {
+    for (int c = (int)m_creatures.size() - 1; c >= 0; c--) {
         m_creatures[c]->hungerImpactHealth();
         m_creatures[c]->growHungry();
         if (!m_creatures[c]->isAlive()) {
