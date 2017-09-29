@@ -68,7 +68,7 @@ public:
     
     
     /**
-     * Simulate vegetation growth
+     * Simulate vegetation growth, limited to 100
      */
     void growFood();
     

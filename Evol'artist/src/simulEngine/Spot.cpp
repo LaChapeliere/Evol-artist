@@ -28,6 +28,7 @@ Creature* Spot::getCreatureFromIndex(const int id) const {
 
 void Spot::growFood() {
     m_food++;
+    m_food = fmin(m_food, 100);
 }
 
 void Spot::feedCreatures() {
