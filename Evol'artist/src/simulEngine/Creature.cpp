@@ -56,7 +56,7 @@ const int Creature::getId() const {
     return m_id;
 }
 
-const int Creature::getGenome() const {
+const std::string Creature::getGenome() const {
     return m_genome;
 }
 
