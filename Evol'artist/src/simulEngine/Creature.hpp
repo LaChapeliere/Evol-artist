@@ -106,6 +106,12 @@ public:
     const int getId() const;
     
     /**
+     * Genome accessor
+     * @return m_genome
+     */
+    const std::string getGenome() const;
+    
+    /**
      * Vision capacity accessor
      * @return m_visionCap
      */

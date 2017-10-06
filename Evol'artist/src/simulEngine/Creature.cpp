@@ -56,6 +56,10 @@ const int Creature::getId() const {
     return m_id;
 }
 
+const int Creature::getGenome() const {
+    return m_genome;
+}
+
 const int Creature::getVisionCap() const {
     return m_visionCap;
 }
