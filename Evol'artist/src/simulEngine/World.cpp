@@ -58,7 +58,7 @@ void World::addCreature() {
 void World::addCreature(const int x, const int y) {
     //Create creature
     m_lastCreatureId++;
-    Creature* creaturePtr = new Creature(m_lastCreatureId, "ABO", x, y);
+    Creature* creaturePtr = new Creature(m_lastCreatureId, "ABBOABCBO", x, y);
     m_creatures.push_back(creaturePtr);
     
     //Add creature to grid
@@ -127,7 +127,12 @@ void World::interactBtwCreatures() {
                 int newX = (x + (rand() % 2 - 1) + m_size) % m_size;
                 int newY = (y + (rand() % 2 - 1) + m_size) % m_size;
                 m_lastCreatureId++;
-                Creature* newCreaturePtr = new Creature(m_lastCreatureId, "ABO", newX, newY);
+                std::string baseGenome = "ABBOABCBO";
+                const char possibleBases[3] = {'B', 'C', 'D'};
+                const int replaceBase = rand() % (baseGenome.size() - 2) + 1;
+                const int withBase = possibleBases[rand() % 3];
+                baseGenome[replaceBase] = withBase;
+                Creature* newCreaturePtr = new Creature(m_lastCreatureId, baseGenome, newX, newY);
                 m_toBeBornCreatures.push_back(newCreaturePtr);
             }
         }

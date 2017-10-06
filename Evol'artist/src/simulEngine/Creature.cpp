@@ -73,7 +73,33 @@ const bool Creature::isAlive() const {
 }
 
 void Creature::interpretGenome() {
+    // m_moveCap -> Only fastest version counts
+    // Super fast DD
+    if (m_genome.find("ADDO") != std::string::npos) {
+        m_moveCap = 5;
+    }
+    // Normal CC
+    else if (m_genome.find("ACCO") != std::string::npos) {
+        m_moveCap = 2;
+    }
+    // Slow BB
+    else if (m_genome.find("ABBO") != std::string::npos) {
+        m_moveCap = 1;
+    }
     
+    // m_visionCap -> Additional
+    // Low vision BCB
+    if (m_genome.find("ABCBO") != std::string::npos) {
+        m_visionCap += 1;
+    }
+    // Normal vision BCC
+    if (m_genome.find("ABCCO") != std::string::npos) {
+        m_visionCap += 2;
+    }
+    // Super vision CDC
+    if (m_genome.find("ACDCO") != std::string::npos) {
+        m_visionCap += 3;
+    }
 }
 
 void Creature::growHungry() {
