@@ -10,7 +10,7 @@
 #include "Creature.hpp"
 #include "World.hpp"
 
-Creature::Creature(const int id, const int x, const int y): m_id(id), m_visionCap(3), m_moveCap(1) {
+Creature::Creature(const int id, const std::string genome, const int x, const int y): m_id(id), m_visionCap(3), m_moveCap(1), m_genome(genome) {
     //Initialise attributes
     m_x = x;
     m_y = y;
@@ -20,7 +20,7 @@ Creature::Creature(const int id, const int x, const int y): m_id(id), m_visionCa
     m_maxPercepCap = m_visionCap;
 }
 
-Creature::Creature(const int id): m_id(id), m_visionCap(3), m_moveCap(1) {
+Creature::Creature(const int id, const std::string genome): m_id(id), m_visionCap(3), m_moveCap(1), m_genome(genome) {
     //Generate random coordinates in world space
     const int x = rand() % 1000;
     const int y = rand() % 1000;
@@ -34,7 +34,7 @@ Creature::Creature(const int id): m_id(id), m_visionCap(3), m_moveCap(1) {
     m_maxPercepCap = m_visionCap;
 }
 
-Creature::Creature(const Creature& creature): m_id(creature.m_id), m_visionCap(creature.m_visionCap), m_moveCap(creature.m_moveCap), m_x(creature.m_x), m_y(creature.m_y), m_health(creature.m_health), m_hunger(creature.m_hunger), m_maxPercepCap(creature.m_maxPercepCap) {}
+Creature::Creature(const Creature& creature): m_id(creature.m_id), m_visionCap(creature.m_visionCap), m_moveCap(creature.m_moveCap), m_x(creature.m_x), m_y(creature.m_y), m_health(creature.m_health), m_hunger(creature.m_hunger), m_maxPercepCap(creature.m_maxPercepCap), m_genome(creature.m_genome) {}
 
 Creature Creature::operator=(const Creature& creature) {
     return Creature(creature);

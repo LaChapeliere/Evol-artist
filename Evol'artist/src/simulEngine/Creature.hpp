@@ -13,6 +13,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <vector>
+#include <string>
 #include <math.h>
 #include <utility>
 
@@ -27,6 +28,11 @@ private:
      * Identifier of the creature
      */
     const int m_id;
+    
+    /**
+     * Single chromosome genoma
+     */
+    const std::string m_genome;
     
     /**
      * Vision capacity of the creature
@@ -72,16 +78,18 @@ public:
     /**
      * Creature constructor with specified coordinates
      * @param id Creature id
+     * @param genome Single chromosome genome
      * @param x Horizontal coordinate
      * @param y Vertical coordinate
      */
-    Creature(const int id, const int x, const int y);
+    Creature(const int id, const std::string genome, const int x, const int y);
     
     /**
      * Creature constructor at random location
      * @param id Creature id
+     * @param genome Single chromosome genome
      */
-    Creature(const int id);
+    Creature(const int id, const std::string genome);
     
     /**
      * Creature copy constructor

@@ -58,7 +58,7 @@ void World::addCreature() {
 void World::addCreature(const int x, const int y) {
     //Create creature
     m_lastCreatureId++;
-    Creature* creaturePtr = new Creature(m_lastCreatureId, x, y);
+    Creature* creaturePtr = new Creature(m_lastCreatureId, "ABO", x, y);
     m_creatures.push_back(creaturePtr);
     
     //Add creature to grid
@@ -127,7 +127,7 @@ void World::interactBtwCreatures() {
                 int newX = (x + (rand() % 2 - 1) + m_size) % m_size;
                 int newY = (y + (rand() % 2 - 1) + m_size) % m_size;
                 m_lastCreatureId++;
-                Creature* newCreaturePtr = new Creature(m_lastCreatureId, newX, newY);
+                Creature* newCreaturePtr = new Creature(m_lastCreatureId, "ABO", newX, newY);
                 m_toBeBornCreatures.push_back(newCreaturePtr);
             }
         }
