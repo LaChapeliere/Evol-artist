@@ -13,6 +13,9 @@ World::World(const int size, const int nbCreatures): m_size(size) {
     m_age = 0;
     m_incubationTime = 0;
     m_lastCreatureId = -1;
+    m_bases.push_back('B');
+    m_bases.push_back('C');
+    m_bases.push_back('D');
     
     //Create grid of Spots
     for (int y = 0; y < m_size; y++) {
@@ -119,24 +122,73 @@ void World::moveCreatures() {
 
 void World::interactBtwCreatures() {
     // Get Creatures to interact
-    // For now, dummy reproduction: each Spot with more than one Creature generates a new random Creature in one of the neighboring spots. The Creature is not added immediately but will be born in the simulation resolving step
     for (int x = 0; x < m_size; x++) {
         for (int y = 0; y < m_size; y++) {
-            if (m_grid[y * m_size + x].getNbCreatures() > 1) {
-                //Create creature
-                int newX = (x + (rand() % 2 - 1) + m_size) % m_size;
-                int newY = (y + (rand() % 2 - 1) + m_size) % m_size;
+            if (m_grid[y * m_size + x].getNbCreatures() == 2) {
+                // If exactly two Creatures in a Spot, reproduction
                 m_lastCreatureId++;
-                std::string baseGenome = "ABBOABCBO";
-                const char possibleBases[3] = {'B', 'C', 'D'};
-                const int replaceBase = rand() % (baseGenome.size() - 2) + 1;
-                const int withBase = possibleBases[rand() % 3];
-                baseGenome[replaceBase] = withBase;
-                Creature* newCreaturePtr = new Creature(m_lastCreatureId, baseGenome, newX, newY);
+                Creature* newCreaturePtr = sexualReproduction(m_grid[y * m_size + x].getCreatureFromIndex(0), m_grid[y * m_size + x].getCreatureFromIndex(1));
                 m_toBeBornCreatures.push_back(newCreaturePtr);
             }
         }
     }
+}
+
+Creature* World::asexualReproduction(Creature* parent) {
+    // New creature in a random neighbouring spot
+    std::pair<int, int> parentCoords = parent->getCoord();
+    const int childX = (parentCoords.first + (rand() % 2 - 1) + m_size) % m_size;
+    const int childY = (parentCoords.second + (rand() % 2 - 1) + m_size) % m_size;
+    
+    // Genome is that of parent plus mutation step
+    std::string genome = parent->getGenome();
+    const int i = 100000;
+    for (char c = 0; c < genome.size(); c++) {
+        int r = rand() % i;
+        if (r <= m_mutationProb * i) {
+            //Mutation
+            const int newBase = m_bases[rand() % m_bases.size()];
+            genome[c] = newBase;
+        }
+    }
+    
+    return new Creature(m_lastCreatureId, genome, childX, childY);
+}
+
+Creature* World::sexualReproduction(Creature* firstParent, Creature* secondParent) {
+    // New creature in a random neighbouring spot
+    std::pair<int, int> parentCoords = firstParent->getCoord();
+    const int childX = (parentCoords.first + (rand() % 2 - 1) + m_size) % m_size;
+    const int childY = (parentCoords.second + (rand() % 2 - 1) + m_size) % m_size;
+    
+    // Genome is that of combination of parents plus mutation step
+    std::vector<std::string> parentGenomes;
+    parentGenomes.push_back(firstParent->getGenome());
+    parentGenomes.push_back(secondParent->getGenome());
+    int selectedParent = 0;
+    std::string genome = "";
+    const int i = 100000;
+    for (char c = 0; c < parentGenomes[selectedParent].size(); c++) {
+        // Copy selected parent genome
+        char base = parentGenomes[selectedParent][c];
+        genome += base;
+        
+        int r = rand() % i;
+        if (r <= m_crossoverProb * i) {
+            // Crossover
+            // Change the selected parent genome
+            selectedParent = (selectedParent + 1) % 2;
+        }
+        
+        r = rand() % i;
+        if (r <= m_mutationProb * i) {
+            //Mutation
+            const int newBase = m_bases[rand() % m_bases.size()];
+            genome[c] = newBase;
+        }
+    }
+    
+    return new Creature(m_lastCreatureId, genome, childX, childY);
 }
 
 void World::interactCreaturesEnv() {

@@ -54,6 +54,22 @@ private:
      */
     std::vector<Creature*> m_toBeBornCreatures;
     
+    // Genetic attributes
+    /**
+     * Mutation probability for reproduction
+     */
+    const double m_mutationProb = 0.4;
+    
+    /**
+     * Cross-over probability for reproduction
+     */
+    const double m_crossoverProb = 0.05;
+    
+    /**
+     * Possible base in the genetic code
+     */
+    std::vector<char> m_bases;
+    
 public:
     /**
      * World constructor
@@ -129,6 +145,21 @@ public:
      * Have Creatures interact with their environment
      */
     void interactCreaturesEnv();
+    
+    /**
+     * Create a descendant of a Creature
+     * @param parent The parent Creature
+     * @return The child Creature
+     */
+    Creature* asexualReproduction(Creature* parent);
+    
+    /**
+     * Creature a descendant of two Creatures
+     * @param firstParent One parent Creature
+     * @param secondParent One parent Creature
+     * @return The child Creature
+     */
+    Creature* sexualReproduction(Creature* firstParent, Creature* secondParent);
     
     /**
      * Survival and aging step
