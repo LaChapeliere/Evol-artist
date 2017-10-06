@@ -10,12 +10,18 @@
 #include "Creature.hpp"
 #include "World.hpp"
 
-Creature::Creature(const int id, const std::string genome, const int x, const int y): m_id(id), m_visionCap(3), m_moveCap(1), m_genome(genome) {
-    //Initialise attributes
-    m_x = x;
-    m_y = y;
+Creature::Creature(const int id, const std::string genome, const int x, const int y): m_id(id), m_genome(genome) {
+    //Initialise attributes by default
     m_health = 100;
     m_hunger = 0;
+    m_visionCap = 0;
+    m_moveCap = 0;
+    
+    interpretGenome();
+    
+    //Coordinates
+    m_x = x;
+    m_y = y;
     
     m_maxPercepCap = m_visionCap;
 }
@@ -25,11 +31,17 @@ Creature::Creature(const int id, const std::string genome): m_id(id), m_visionCa
     const int x = rand() % 1000;
     const int y = rand() % 1000;
     
-    //Initialise attributes
-    m_x = x;
-    m_y = y;
+    //Initialise attributes by default
     m_health = 100;
     m_hunger = 0;
+    m_visionCap = 0;
+    m_moveCap = 0;
+    
+    interpretGenome();
+    
+    //Coordinates
+    m_x = x;
+    m_y = y;
     
     m_maxPercepCap = m_visionCap;
 }
@@ -58,6 +70,10 @@ const std::pair<int, int> Creature::getCoord() const {
 
 const bool Creature::isAlive() const {
     return (m_health > 0);
+}
+
+void Creature::interpretGenome() {
+    
 }
 
 void Creature::growHungry() {

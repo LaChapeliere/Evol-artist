@@ -37,7 +37,7 @@ private:
     /**
      * Vision capacity of the creature
      */
-    const int m_visionCap;
+    int m_visionCap;
     
     /**
      * Maximum range of perception
@@ -47,7 +47,7 @@ private:
     /**
      * Movement capacity of the creature
      */
-    const int m_moveCap;
+    int m_moveCap;
     
     /**
      * Horizontal coordinate of the creature in the world grid
@@ -129,6 +129,11 @@ public:
      */
     const bool isAlive() const;
     
+    
+    /**
+     * Interpret genome as characteristics
+     */
+    void interpretGenome();
     
     /**
      * Increase hunger as time goes
