@@ -110,12 +110,6 @@ public:
      */
     Spot const* getPointerToSpot(const int x, const int y) const;
     
-    
-    /**
-     * Add a Creature to the world, in a random position
-     */
-    void addCreature();
-    
     /**
      * Add a Creature to the world, in a specified position
      */
@@ -125,12 +119,7 @@ public:
      * Delete a Creature from the world, according to its identifier
      */
     void removeCreature(const int creatureId);
-    
-    /**
-     * Evaluate environment for each Creature object
-     */
-    void evalEnvCreatures();
-    
+
     /**
      * Move all Creature objects
      */
@@ -140,12 +129,7 @@ public:
      * Have Creatures interact in each Spot
      */
     void interactBtwCreatures();
-    
-    /**
-     * Have Creatures interact with their environment
-     */
-    void interactCreaturesEnv();
-    
+ 
     /**
      * Create a descendant of a Creature
      * @param parent The parent Creature
@@ -160,12 +144,7 @@ public:
      * @return The child Creature
      */
     Creature* sexualReproduction(Creature* firstParent, Creature* secondParent);
-    
-    /**
-     * Survival and aging step
-     */
-    void resolveTurn();
-    
+ 
     /**
      * Run one simulation step
      */

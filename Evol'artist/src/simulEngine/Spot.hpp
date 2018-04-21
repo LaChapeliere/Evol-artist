@@ -29,11 +29,6 @@ private:
     const int m_y;
     
     /**
-     * Feeding power of the spot
-     */
-    int m_food;
-    
-    /**
      * List of Creatures (pointers) on this spot
      */
     std::vector<Creature*> m_creatures;
@@ -45,13 +40,6 @@ public:
      * @param y Vertical coordinate
      */
     Spot(const int x, const int y);
-    
-    
-    /**
-     * Accessor of feeding power
-     * @return m_food
-     */
-    const int getFood() const;
     
     /**
      * Give the number of creatures on the spot
@@ -65,17 +53,6 @@ public:
      * @return The value of m_creatures[id]
      */
     Creature* getCreatureFromIndex(const int id) const;
-    
-    
-    /**
-     * Simulate vegetation growth, limited to 100
-     */
-    void growFood();
-    
-    /**
-     * Simulate feeding from vegetation
-     */
-    void feedCreatures();
     
     /**
      * Add a creature to the spot

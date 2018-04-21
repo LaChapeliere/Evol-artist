@@ -26,7 +26,7 @@ World::World(const int size, const int nbCreatures): m_size(size) {
     
     //Add the Creatures in the grid
     for (int i = 0; i < nbCreatures; i++) {
-        addCreature();
+        //addCreature();
     }
 }
 
@@ -48,14 +48,6 @@ const int World::getNbCreatures() const {
 
 Spot const* World::getPointerToSpot(const int x, const int y) const {
     return &(m_grid[y * m_size + x]);
-}
-
-void World::addCreature() {
-    //Generate random coordinates in world space
-    const int x = rand() % m_size;
-    const int y = rand() % m_size;
-    
-    addCreature(x, y);
 }
 
 void World::addCreature(const int x, const int y) {
@@ -93,13 +85,6 @@ void World::removeCreature(const int creatureId) {
         //Remove from world
         m_creatures.erase(m_creatures.begin() + indexInMCreatures);
         delete creaturePtr;
-    }
-}
-
-void World::evalEnvCreatures() {
-    //For each Creature
-    for (int c = 0; c < m_creatures.size(); c++) {
-        m_creatures[c]->perceiveLocalEnv(this);
     }
 }
 
@@ -191,47 +176,7 @@ Creature* World::sexualReproduction(Creature* firstParent, Creature* secondParen
     return new Creature(m_lastCreatureId, genome, childX, childY);
 }
 
-void World::interactCreaturesEnv() {
-    //For each Spot
-    for (int s = 0; s < (int)m_grid.size(); s++) {
-        m_grid[s].feedCreatures();
-    }
-}
-
-void World::resolveTurn() {
-    //Update health and hunger for each Creature, then check if it's alive, remove it if not
-    for (int c = (int)m_creatures.size() - 1; c >= 0; c--) {
-        m_creatures[c]->hungerImpactHealth();
-        m_creatures[c]->growHungry();
-        if (!m_creatures[c]->isAlive()) {
-            removeCreature(m_creatures[c]->getId());
-        }
-    }
-    
-    //Give birth to new Creatures
-    for (int c = 0; c < m_toBeBornCreatures.size(); c++) {
-        m_creatures.push_back(m_toBeBornCreatures[c]);
-        const std::pair<int, int> coord = m_toBeBornCreatures[c]->getCoord();
-
-        //Add creature to grid
-        m_grid[coord.first + coord.second * m_size].addCreature(m_creatures[m_creatures.size() -1]);
-    }
-    m_toBeBornCreatures.clear();
-    
-    //Update vegetation on Spot objects
-    for (int s = 0; s < m_grid.size(); s++) {
-        m_grid[s].growFood();
-    }
-    
-    //Update age and incubation time
-    m_age++;
-    m_incubationTime++;
-}
-
 void World::runSimulationStep() {
-    evalEnvCreatures();
     moveCreatures();
     interactBtwCreatures();
-    interactCreaturesEnv();
-    resolveTurn();
 }

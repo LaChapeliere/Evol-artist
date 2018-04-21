@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B5437EAA1F7E4FCB0060BDB7 /* astar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5437EA91F7E4FCB0060BDB7 /* astar.cpp */; };
 		B5D7C4B71F7D3B5500BCBE7E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C4B61F7D3B5500BCBE7E /* main.cpp */; };
 		B5D7C4C11F7D3BBE00BCBE7E /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C4BF1F7D3BBE00BCBE7E /* World.cpp */; };
 		B5D7C4C41F7D3BE100BCBE7E /* Spot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C4C21F7D3BE100BCBE7E /* Spot.cpp */; };
@@ -27,7 +26,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B5437EA91F7E4FCB0060BDB7 /* astar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = astar.cpp; sourceTree = "<group>"; };
 		B5D7C4B31F7D3B5500BCBE7E /* Evol'artist */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Evol'artist"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D7C4B61F7D3B5500BCBE7E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B5D7C4BF1F7D3BBE00BCBE7E /* World.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = World.cpp; sourceTree = "<group>"; };
@@ -54,7 +52,6 @@
 		B5437EA81F7E4FAE0060BDB7 /* utils */ = {
 			isa = PBXGroup;
 			children = (
-				B5437EA91F7E4FCB0060BDB7 /* astar.cpp */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -166,7 +163,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5D7C4C71F7D3BEA00BCBE7E /* Creature.cpp in Sources */,
-				B5437EAA1F7E4FCB0060BDB7 /* astar.cpp in Sources */,
 				B5D7C4C41F7D3BE100BCBE7E /* Spot.cpp in Sources */,
 				B5D7C4C11F7D3BBE00BCBE7E /* World.cpp in Sources */,
 				B5D7C4B71F7D3B5500BCBE7E /* main.cpp in Sources */,
