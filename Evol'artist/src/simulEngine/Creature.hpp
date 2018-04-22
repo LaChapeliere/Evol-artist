@@ -16,6 +16,9 @@
 #include <string>
 #include <math.h>
 #include <utility>
+#include <regex>
+#include <iterator>
+#include "FitnessFunctions.hpp"
 
 //Forward declaration of World class
 class World;
@@ -33,6 +36,11 @@ private:
      * Single chromosome genome
      */
     const std::string m_genome;
+    
+    /**
+     * List of genes by alphabetical order
+     */
+    std::vector<std::string> m_genes;
     
     /**
      * Horizontal coordinate of the creature in the world grid
@@ -81,9 +89,10 @@ public:
     const std::pair<int, int> getCoord() const;
     
     /**
-     * Interpret genome as characteristics
+     * Interpret genome as genes
+     * @return A list of valide gene strings
      */
-    void interpretGenome();
+    std::vector<std::string> interpretGenome();
     
     /**
      * Move the creature towards the visible spot with highest feeding power

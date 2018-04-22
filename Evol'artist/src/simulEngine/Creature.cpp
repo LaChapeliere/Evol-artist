@@ -13,7 +13,7 @@
 Creature::Creature(const int id, const std::string genome, const int x, const int y): m_id(id), m_genome(genome) {
     //Initialise attributes by default
     
-    interpretGenome();
+    m_genes = interpretGenome();
     
     //Coordinates
     m_x = x;
@@ -38,8 +38,20 @@ const std::pair<int, int> Creature::getCoord() const {
     return std::pair<int, int> (m_x, m_y);
 }
 
-void Creature::interpretGenome() {
+std::vector<std::string> Creature::interpretGenome() {
+    // Get list of genes using regular expressions
+    std::regex genesRegex("A[BCD]{2,3}E");
+    auto genesBegin = std::sregex_iterator(m_genome.begin(), m_genome.end(), genesRegex);
+    auto genesEnd = std::sregex_iterator();
+    std::vector<std::string> genes;
+    for (std::sregex_iterator i = genesBegin; i != genesEnd; ++i) {
+        std::smatch match = *i;
+        std::string gene = match.str();
+        gene = gene.substr(1,gene.size() - 2); //Strip A and E
+        genes.push_back(gene);
+    }
     
+    return genes;
 }
 
 const std::pair<int, int> Creature::move(const int worldSize) {

@@ -14,6 +14,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include "simulEngine/World.hpp"
+#include "simulEngine/FitnessFunctions.hpp"
 using namespace std;
 
 int main(){
@@ -21,7 +22,7 @@ int main(){
     srand ((unsigned int)time(NULL));
     
     cout << "Hello World!" << endl;
-    
+    /*
     // Run the simulation. No insight on what's happening in the back box for now
     World myWorld(1000, 10);
     for (int t = 0; t < 200; t++) {
@@ -31,7 +32,10 @@ int main(){
             std::cout << "Oh no! They're all dead :'(" << std::endl;
             break;
         }
-    }
+    }*/
+    FitnessFunctions f = FitnessFunctions();
+    std::function<int()> func = f.getFitnessFunction("BB");
+    std::cout << func() << std::endl;
     
     return 0;
     
