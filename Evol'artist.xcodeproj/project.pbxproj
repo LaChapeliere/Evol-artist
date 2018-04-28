@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5858E96208CDFE500A657A3 /* FitnessFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5858E94208CDFE500A657A3 /* FitnessFunctions.cpp */; };
 		B5D7C4B71F7D3B5500BCBE7E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C4B61F7D3B5500BCBE7E /* main.cpp */; };
 		B5D7C4C11F7D3BBE00BCBE7E /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C4BF1F7D3BBE00BCBE7E /* World.cpp */; };
 		B5D7C4C41F7D3BE100BCBE7E /* Spot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C4C21F7D3BE100BCBE7E /* Spot.cpp */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B5858E94208CDFE500A657A3 /* FitnessFunctions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FitnessFunctions.cpp; sourceTree = "<group>"; };
+		B5858E95208CDFE500A657A3 /* FitnessFunctions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FitnessFunctions.hpp; sourceTree = "<group>"; };
 		B5D7C4B31F7D3B5500BCBE7E /* Evol'artist */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Evol'artist"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D7C4B61F7D3B5500BCBE7E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B5D7C4BF1F7D3BBE00BCBE7E /* World.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = World.cpp; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 				B5D7C4C31F7D3BE100BCBE7E /* Spot.hpp */,
 				B5D7C4C51F7D3BEA00BCBE7E /* Creature.cpp */,
 				B5D7C4C61F7D3BEA00BCBE7E /* Creature.hpp */,
+				B5858E94208CDFE500A657A3 /* FitnessFunctions.cpp */,
+				B5858E95208CDFE500A657A3 /* FitnessFunctions.hpp */,
 			);
 			path = simulEngine;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 			files = (
 				B5D7C4C71F7D3BEA00BCBE7E /* Creature.cpp in Sources */,
 				B5D7C4C41F7D3BE100BCBE7E /* Spot.cpp in Sources */,
+				B5858E96208CDFE500A657A3 /* FitnessFunctions.cpp in Sources */,
 				B5D7C4C11F7D3BBE00BCBE7E /* World.cpp in Sources */,
 				B5D7C4B71F7D3B5500BCBE7E /* main.cpp in Sources */,
 			);

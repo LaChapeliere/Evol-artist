@@ -34,8 +34,13 @@ int main(){
         }
     }*/
     FitnessFunctions f = FitnessFunctions();
-    std::function<int()> func = f.getFitnessFunction("BB");
-    std::cout << func() << std::endl;
+    std::vector<std::string> genome;
+    genome.push_back("BBD");
+    genome.push_back("CBC");
+    std::map<std::string, int> env;
+    env.insert(std::make_pair("global", 4));
+    int fitness = f.getFitness(genome, env);
+    std::cout << fitness << std::endl;
     
     return 0;
     

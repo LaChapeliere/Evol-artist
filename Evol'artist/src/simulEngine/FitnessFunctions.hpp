@@ -19,7 +19,8 @@ private:
     /*
      * Map between genes and fitness functions
      */
-    std::map<std::string, std::function<int()>> m_fitnessFunctions;
+    std::map<std::string, std::function<int(std::map<std::string, int>)>> m_fitnessFunctions;
+    
     
 public:
     /**
@@ -28,11 +29,12 @@ public:
     FitnessFunctions();
     
     /**
-     * m_fitnessFunctions accessor
-     * @param gene The gene to fetch the fitness function for
-     * @return m_fitnessFunctions[gene]
+     * Compute the fitness of a genome
+     * @param genome List of genes
+     * @param env A dictionnary describing the environment
+     * @return The fitness of the genome between 0 and 100
      */
-    std::function<int()> getFitnessFunction(std::string gene) const;
+    int getFitness(std::vector<std::string> genome, std::map<std::string, int> env) const;
 };
 
 #endif /* FitnessFunctions_hpp */
