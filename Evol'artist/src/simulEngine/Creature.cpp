@@ -10,17 +10,21 @@
 #include "Creature.hpp"
 #include "World.hpp"
 
-Creature::Creature(const int id, const std::string genome, const int x, const int y): m_id(id), m_genome(genome) {
+Creature::Creature(const int id, const std::string genome, const int x, const int y, std::map<std::string, int> env): m_id(id), m_genome(genome) {
     //Initialise attributes by default
     
     m_genes = interpretGenome();
+    
+    // Get fitness
+    FitnessFunctions f = FitnessFunctions();
+    m_fitness = f.getFitness(m_genes, env);
     
     //Coordinates
     m_x = x;
     m_y = y;
 }
 
-Creature::Creature(const Creature& creature): m_id(creature.m_id), m_x(creature.m_x), m_y(creature.m_y), m_genome(creature.m_genome) {}
+Creature::Creature(const Creature& creature): m_id(creature.m_id), m_x(creature.m_x), m_y(creature.m_y), m_genome(creature.m_genome), m_genes(creature.m_genes), m_fitness(creature.m_fitness) {}
 
 Creature Creature::operator=(const Creature& creature) {
     return Creature(creature);
@@ -32,6 +36,10 @@ const int Creature::getId() const {
 
 const std::string Creature::getGenome() const {
     return m_genome;
+}
+
+const int Creature::getFitness() const {
+    return m_fitness;
 }
 
 const std::pair<int, int> Creature::getCoord() const {

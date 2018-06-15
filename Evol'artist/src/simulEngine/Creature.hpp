@@ -43,6 +43,11 @@ private:
     std::vector<std::string> m_genes;
     
     /**
+     * Fitness (between 0 and 100)
+     */
+    int m_fitness;
+    
+    /**
      * Horizontal coordinate of the creature in the world grid
      */
     int m_x;
@@ -59,8 +64,9 @@ public:
      * @param genome Single chromosome genome
      * @param x Horizontal coordinate
      * @param y Vertical coordinate
+     * @param env Dict describing environment
      */
-    Creature(const int id, const std::string genome, const int x, const int y);
+    Creature(const int id, const std::string genome, const int x, const int y, std::map<std::string, int> env);
     
     /**
      * Creature copy constructor
@@ -81,6 +87,12 @@ public:
      * @return m_genome
      */
     const std::string getGenome() const;
+    
+    /**
+     * Fitness accessor
+     * @return m_fitness
+     */
+    const int getFitness() const;
     
     /**
      * Coordinates accessor

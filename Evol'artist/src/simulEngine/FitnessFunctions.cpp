@@ -65,6 +65,12 @@ int FitnessFunctions::getFitness(std::vector<std::string> genome, std::map<std::
     }
     
     // Compute mean of fitness
-    int fitness = fitnessSum / genome.size();
+    int fitness;
+    if (genome.size() == 0) {
+        fitness = 0;
+    }
+    else {
+        fitness = fitnessSum / genome.size();
+    }
     return fitness;
 }

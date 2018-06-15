@@ -96,11 +96,39 @@ public:
      */
     const int getIncubTime() const;
     
+    /** Get the id of the last Creature
+     * @return m_lastCreatureId
+     */
+    const int getLastCreatureId() const;
+    
+    /** Get the id of the last Creature and increment
+     * @return m_lastCreatureId
+     */
+    const int getNewCreatureId();
+    
     /**
     * Get the number of Creature objects in the world
     * @return m_creatures.size()
     */
     const int getNbCreatures() const;
+    
+    /**
+     * Get the mutation rate
+     * @return m_mutationProb
+     */
+    const double getMutationRate() const;
+    
+    /**
+     * Get the crossover rate
+     * @return m_crossoverProb
+     */
+    const double getCrossoverRate() const;
+    
+    /**
+     * Get the possible bases
+     * @return m_bases
+     */
+    const std::vector<char> getPossibleBases() const;
     
     /**
      * Accessor by pointer to Spots in the grid
@@ -111,9 +139,10 @@ public:
     Spot const* getPointerToSpot(const int x, const int y) const;
     
     /**
-     * Add a Creature to the world, in a specified position
+     * Add a Creature to the world list
+     * @param creature Pointer to the creature to be added
      */
-    void addCreature(const int x, const int y);
+    void addCreature(Creature* creature);
     
     /**
      * Delete a Creature from the world, according to its identifier
@@ -124,26 +153,6 @@ public:
      * Move all Creature objects
      */
     void moveCreatures();
-    
-    /**
-     * Have Creatures interact in each Spot
-     */
-    void interactBtwCreatures();
- 
-    /**
-     * Create a descendant of a Creature
-     * @param parent The parent Creature
-     * @return The child Creature
-     */
-    Creature* asexualReproduction(Creature* parent);
-    
-    /**
-     * Creature a descendant of two Creatures
-     * @param firstParent One parent Creature
-     * @param secondParent One parent Creature
-     * @return The child Creature
-     */
-    Creature* sexualReproduction(Creature* firstParent, Creature* secondParent);
  
     /**
      * Run one simulation step

@@ -33,14 +33,12 @@ int main(){
             break;
         }
     }*/
-    FitnessFunctions f = FitnessFunctions();
-    std::vector<std::string> genome;
-    genome.push_back("BBD");
-    genome.push_back("CBC");
-    std::map<std::string, int> env;
-    env.insert(std::make_pair("global", 4));
-    int fitness = f.getFitness(genome, env);
-    std::cout << fitness << std::endl;
+    //FitnessFunctions f = FitnessFunctions();
+    World myWorld(2, 10);
+    for (int i = 0; i < 100; i++) {
+        myWorld.runSimulationStep();
+    }
+    cout << "Hello" << endl;
     
     return 0;
     

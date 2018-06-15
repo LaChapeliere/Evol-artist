@@ -10,14 +10,27 @@
 #define Spot_hpp
 
 #include <stdio.h>
+#include <map>
 #include <vector>
 #include <iostream>
+#include <algorithm>
+#include <random>
+#include <stdlib.h>     /* srand, rand */
+#include <time.h>
 #include "Creature.hpp"
+
+//Forward declaration of World class
+class World;
 
 //Class for the spots in the grid
 class Spot
 {
 private:
+    /**
+     * Pointer to world
+     */
+    World* m_world;
+    
     /**
      * Horizontal coordinate of the position in the world grid
      */
@@ -33,13 +46,19 @@ private:
      */
     std::vector<Creature*> m_creatures;
     
+    /**
+     * Dictionary describing the environment
+     */
+    std::map<std::string, int> m_env;
+    
 public:
     /**
      * Spot constructor
+     * @param world Pointer to the world
      * @param x Horizontal coordinate
      * @param y Vertical coordinate
      */
-    Spot(const int x, const int y);
+    Spot(World* world, const int x, const int y);
     
     /**
      * Give the number of creatures on the spot
@@ -55,6 +74,12 @@ public:
     Creature* getCreatureFromIndex(const int id) const;
     
     /**
+     * Accessor of the m_env variable
+     * @return The value of m_env
+     */
+    std::map<std::string, int> getEnv() const;
+    
+    /**
      * Add a creature to the spot
      * @param creaturePointer The pointer to the added Creature
      */
@@ -66,6 +91,25 @@ public:
      */
     void removeCreature(const int id);
     
+    /**
+     * Genetic algorithm reproduction step
+     */
+    void nextStepPop();
+    
+    /**
+     * Create a descendant of a Creature
+     * @param parent The parent Creature
+     * @return The child Creature
+     */
+    Creature* asexualReproduction(Creature* parent);
+    
+    /**
+     * Creature a descendant of two Creatures
+     * @param firstParent One parent Creature
+     * @param secondParent One parent Creature
+     * @return The child Creature
+     */
+    Creature* sexualReproduction(Creature* firstParent, Creature* secondParent);
 };
 
 #endif /* Spot_hpp */
