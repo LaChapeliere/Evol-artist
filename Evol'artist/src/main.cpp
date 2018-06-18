@@ -34,7 +34,7 @@ int main(){
         }
     }*/
     //FitnessFunctions f = FitnessFunctions();
-    World myWorld(2, 30);
+    World myWorld(4, 250);
     for (int i = 0; i < 100; i++) {
         myWorld.runSimulationStep();
     }

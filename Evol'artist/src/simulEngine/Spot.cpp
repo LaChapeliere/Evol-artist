@@ -76,14 +76,18 @@ void Spot::nextStepPop() {
     //Remove old generation
     m_creatures.clear();
     
+    // Cap population at 250 creatures
+    auto randomShuffle = std::default_random_engine {};
+    std::shuffle(std::begin(newGeneration), std::end(newGeneration), randomShuffle);
+    std::vector<Creature*> newGenerationCut(&newGeneration[0], &newGeneration[fmin(250, newGeneration.size())]);
+    
     // Distribute new generation between this spot and its neighbours
-    // TODO: Add the move to neighbours
-    for (int i = 0; i < newGeneration.size(); i++) {
+    for (int i = 0; i < newGenerationCut.size(); i++) {
         int xModifier = rand() % 3 - 1;
         int yModifier = rand() % 3 - 1;
         int xReal = (m_x + xModifier + m_world->getSize()) % m_world->getSize();
         int yReal = (m_y + yModifier + m_world->getSize()) % m_world->getSize();
-        m_world->getPointerToSpot(xReal, yReal)->addCreature(newGeneration[i]);
+        m_world->getPointerToSpot(xReal, yReal)->addCreature(newGenerationCut[i]);
     }
 }
 

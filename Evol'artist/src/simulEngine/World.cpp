@@ -33,7 +33,7 @@ World::World(const int size, const int nbCreatures): m_size(size) {
         int randY = rand() % m_size;
         std::map<std::string, int> env;
         env.insert(std::make_pair("global", 29));
-        Creature* newCreature = new Creature(getNewCreatureId(), "ADDDEBDDEADDCEADDDE", randX, randY, m_grid[randX + randY * m_size]->getEnv());
+        Creature* newCreature = new Creature(getNewCreatureId(), "ACCEBDDEBCDBBDCBCADDCEBCDBBCDDDCEBCDBBCDADDDEBCDBBDBBCBCCDDCABCADCCEBDEBBDABDCBEBDDEEDABCCECADDDEBCADBCE", randX, randY, m_grid[randX + randY * m_size]->getEnv());
         m_grid[randX + randY * m_size]->addCreature(newCreature);
     }
 }
@@ -78,12 +78,12 @@ Spot* const World::getPointerToSpot(const int x, const int y) const {
 void World::runSimulationStep() {
     for (int i = 0; i < m_size * m_size; i++) {
         Spot* s = m_grid[i];
-        std::cout << s->getNbCreatures() << std::endl;
+        //std::cout << s->getNbCreatures() << std::endl;
         for (int i = 0; i < s->getNbCreatures(); i++) {
             Creature* c = s->getCreatureFromIndex(i);
-            std::cout << c->getId() << " " << c->getFitness() << std::endl;
+            //std::cout << c->getId() << " " << c->getFitness() << " " << c->getGenome() << std::endl;
         }
         s->nextStepPop();
     }
-    std::cout << std::endl;
+    //std::cout << std::endl << std::endl;
 }

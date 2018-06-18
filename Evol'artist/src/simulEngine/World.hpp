@@ -48,7 +48,7 @@ private:
     /**
      * Mutation probability for reproduction
      */
-    const double m_mutationProb = 0.4;
+    const double m_mutationProb = 0.05;
     
     /**
      * Cross-over probability for reproduction
