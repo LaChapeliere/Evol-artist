@@ -62,6 +62,6 @@ std::vector<std::string> Creature::interpretGenome() {
     return genes;
 }
 
-const std::pair<int, int> Creature::move(const int worldSize) {
-    return std::make_pair(m_x, m_y);
+const bool Creature::hasGene(std::string gene) const {
+    return (std::find(m_genes.begin(), m_genes.end(), gene) != m_genes.end());
 }

@@ -22,23 +22,16 @@ int main(){
     srand ((unsigned int)time(NULL));
     
     cout << "Hello World!" << endl;
-    /*
-    // Run the simulation. No insight on what's happening in the back box for now
-    World myWorld(1000, 10);
-    for (int t = 0; t < 200; t++) {
-        myWorld.runSimulationStep();
-        std::cout << "Turn " << t << " with " << myWorld.getNbCreatures() << " creatures alive" << std::endl;
-        if (myWorld.getNbCreatures() == 0) {
-            std::cout << "Oh no! They're all dead :'(" << std::endl;
-            break;
-        }
-    }*/
-    //FitnessFunctions f = FitnessFunctions();
-    World myWorld(4, 250);
+    
+    std::string testGenome =  "ABCEBDDEBCDBBDCBCADDCEBCDBBCDDDCEBCDBBCDADDDEBCDBBDBBCBCCDDCABCADCCEBDEBBDABDCBEBDDEEDABCCECADDDEBCADBCE";
+    
+    World myWorld(4, 250, testGenome);
     for (int i = 0; i < 100; i++) {
         myWorld.runSimulationStep();
+        std::cout << myWorld.getPercentageGene("CC") << std::endl;
     }
-    cout << "Hello" << endl;
+    
+    cout << "Goodbye World!" << endl;
     
     return 0;
     

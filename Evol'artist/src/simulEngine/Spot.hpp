@@ -92,7 +92,7 @@ public:
     void removeCreature(const int id);
     
     /**
-     * Genetic algorithm reproduction step. Each pair of parents create 4 offsprings
+     * Genetic algorithm reproduction step. Each pair of parents create 10 offsprings
      */
     void nextStepPop();
     

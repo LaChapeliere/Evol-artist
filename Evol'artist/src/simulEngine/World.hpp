@@ -65,8 +65,9 @@ public:
      * World constructor
      * @param size The size of the square grid
      * @param nbCreatures The number of Creature objects to generate in the grid initially
+     * @param genome The genome of the initial population
      */
-    World(const int size, const int nbCreatures);
+    World(const int size, const int nbCreatures, const std::string genome);
     
     /**
      * Accessor of size of the world
@@ -132,6 +133,15 @@ public:
      * Run one simulation step
      */
     void runSimulationStep();
+    
+    
+    // Information functions
+    
+    /**
+     * Get percentage of the world population with a given gene
+     * @return The percentage
+     */
+    int getPercentageGene(std::string gene) const;
 };
 
 #endif /* World_hpp */

@@ -63,8 +63,8 @@ void Spot::nextStepPop() {
             }
             else {
                 secondParent = m_creatures[i];
-                //Four offsprings
-                for (int i = 0; i < 4; i++) {
+                //Ten offsprings
+                for (int i = 0; i < 10; i++) {
                     newGeneration.push_back(sexualReproduction(firstParent, secondParent));
                 }
                 firstParent = nullptr;
@@ -76,10 +76,10 @@ void Spot::nextStepPop() {
     //Remove old generation
     m_creatures.clear();
     
-    // Cap population at 250 creatures
+    // Cap population at 100 creatures
     auto randomShuffle = std::default_random_engine {};
     std::shuffle(std::begin(newGeneration), std::end(newGeneration), randomShuffle);
-    std::vector<Creature*> newGenerationCut(&newGeneration[0], &newGeneration[fmin(250, newGeneration.size())]);
+    std::vector<Creature*> newGenerationCut(&newGeneration[0], &newGeneration[fmin(100, newGeneration.size())]);
     
     // Distribute new generation between this spot and its neighbours
     for (int i = 0; i < newGenerationCut.size(); i++) {

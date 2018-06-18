@@ -107,11 +107,11 @@ public:
     std::vector<std::string> interpretGenome();
     
     /**
-     * Move the creature towards the visible spot with highest feeding power
-     * @param worldSize The size of the world grid
-     * @return The pair of new horizontal and vertical coordinates
+     * Check if has a specific gene
+     * @param gene The string of the gene
+     * @return True if the gene is present
      */
-    const std::pair<int, int> move(const int worldSize);
+    const bool hasGene(std::string gene) const;
 };
 
 #endif /* Creature_hpp */
