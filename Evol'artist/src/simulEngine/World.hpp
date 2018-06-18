@@ -37,22 +37,12 @@ private:
     /**
      * Flattened matrix of Spot objects, represent the grid
      */
-    std::vector<Spot> m_grid;
+    std::vector<Spot*> m_grid;
     
     /**
      * Identifier of most recent Creature object
      */
     int m_lastCreatureId;
-    
-    /**
-     * List of pointers to all Creature objects in the world
-     */
-    std::vector<Creature*> m_creatures;
-    
-    /**
-     * List of pointers to Creature objects that will be added to the world during the simulation resolution step
-     */
-    std::vector<Creature*> m_toBeBornCreatures;
     
     // Genetic attributes
     /**
@@ -136,23 +126,7 @@ public:
      * @param y The vertical coordinate of the desired Spot in the grid
      * @return The pointer to the corresponding Spot object
      */
-    Spot const* getPointerToSpot(const int x, const int y) const;
-    
-    /**
-     * Add a Creature to the world list
-     * @param creature Pointer to the creature to be added
-     */
-    void addCreature(Creature* creature);
-    
-    /**
-     * Delete a Creature from the world, according to its identifier
-     */
-    void removeCreature(const int creatureId);
-
-    /**
-     * Move all Creature objects
-     */
-    void moveCreatures();
+    Spot* const getPointerToSpot(const int x, const int y) const;
  
     /**
      * Run one simulation step

@@ -63,18 +63,27 @@ void Spot::nextStepPop() {
             }
             else {
                 secondParent = m_creatures[i];
-                newGeneration.push_back(sexualReproduction(firstParent, secondParent));
+                //Four offsprings
+                for (int i = 0; i < 4; i++) {
+                    newGeneration.push_back(sexualReproduction(firstParent, secondParent));
+                }
                 firstParent = nullptr;
                 secondParent = nullptr;
             }
         }
     }
     
+    //Remove old generation
+    m_creatures.clear();
+    
     // Distribute new generation between this spot and its neighbours
     // TODO: Add the move to neighbours
-    m_creatures.clear();
     for (int i = 0; i < newGeneration.size(); i++) {
-        m_creatures.push_back(newGeneration[i]);
+        int xModifier = rand() % 3 - 1;
+        int yModifier = rand() % 3 - 1;
+        int xReal = (m_x + xModifier + m_world->getSize()) % m_world->getSize();
+        int yReal = (m_y + yModifier + m_world->getSize()) % m_world->getSize();
+        m_world->getPointerToSpot(xReal, yReal)->addCreature(newGeneration[i]);
     }
 }
 
@@ -100,7 +109,6 @@ Creature* Spot::asexualReproduction(Creature* parent) {
 }
 
 Creature* Spot::sexualReproduction(Creature* firstParent, Creature* secondParent) {
-    // New creature in the same spot
     std::pair<int, int> parentCoords = firstParent->getCoord();
     
     // Genome is that of combination of parents plus mutation step
