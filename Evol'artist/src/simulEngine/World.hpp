@@ -66,8 +66,9 @@ public:
      * @param size The size of the square grid
      * @param nbCreatures The number of Creature objects to generate in the grid initially
      * @param genome The genome of the initial population
+     * @param globalEnv The mean and std for each environmental variable
      */
-    World(const int size, const int nbCreatures, const std::string genome);
+    World(const int size, const int nbCreatures, const std::string genome, std::map<std::string, std::pair<int, int>> globalEnv);
     
     /**
      * Accessor of size of the world
