@@ -11,10 +11,10 @@
 #include "Spot.hpp"
 #include "World.hpp"
 
-Spot::Spot(World* world, const int x, const int y): m_world(world), m_x(x), m_y(y) {
+Spot::Spot(World* world, const int x, const int y, const std::map<std::string, int> env): m_world(world), m_x(x), m_y(y) {
     // FOR NOW
     // Create basic env
-    m_env.insert(std::make_pair("global", 1));
+    m_env = env;
 }
 
 const int Spot::getNbCreatures() const {
@@ -76,10 +76,10 @@ void Spot::nextStepPop() {
     //Remove old generation
     m_creatures.clear();
     
-    // Cap population at 100 creatures
+    // Cap population at 50 creatures
     auto randomShuffle = std::default_random_engine {};
     std::shuffle(std::begin(newGeneration), std::end(newGeneration), randomShuffle);
-    std::vector<Creature*> newGenerationCut(&newGeneration[0], &newGeneration[fmin(100, newGeneration.size())]);
+    std::vector<Creature*> newGenerationCut(&newGeneration[0], &newGeneration[fmin(50, newGeneration.size())]);
     
     // Distribute new generation between this spot and its neighbours
     for (int i = 0; i < newGenerationCut.size(); i++) {

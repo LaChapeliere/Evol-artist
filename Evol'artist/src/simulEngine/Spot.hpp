@@ -57,8 +57,9 @@ public:
      * @param world Pointer to the world
      * @param x Horizontal coordinate
      * @param y Vertical coordinate
+     * @param env Dictionnary describing the environment
      */
-    Spot(World* world, const int x, const int y);
+    Spot(World* world, const int x, const int y, const std::map<std::string, int> env);
     
     /**
      * Give the number of creatures on the spot

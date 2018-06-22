@@ -20,7 +20,9 @@ World::World(const int size, const int nbCreatures, const std::string genome): m
     //Create grid of Spots
     for (int y = 0; y < m_size; y++) {
         for (int x = 0; x < m_size; x++) {
-            Spot* spot = new Spot(this, x, y);
+            std::map<std::string, int> env;
+            env.insert(std::make_pair("global", 1));
+            Spot* spot = new Spot(this, x, y, env);
             m_grid.push_back(spot);
         }
     }
