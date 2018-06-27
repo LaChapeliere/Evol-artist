@@ -40,7 +40,7 @@ void Spot::removeCreature(const int id) {
             return;
         }
     }
-    std::cout << "Trying to remove unexisting Creature from Spot" << std::endl;
+    std::cerr << "Trying to remove unexisting Creature from Spot" << std::endl;
 }
 
 void Spot::nextStepPop() {
@@ -54,7 +54,9 @@ void Spot::nextStepPop() {
     // For each creature decide if reproduction
     Creature* firstParent = nullptr;
     Creature* secondParent = nullptr;
-    for (int i = 0; i < m_creatures.size(); i++) {
+    
+    int nbNu = 0;
+    for (int i = 0; i < m_creatures.size() && nbNu <= 50; i++) {
         int dice = rand() % 101;
         int fitness = m_creatures[i]->getFitness();
         if (dice < fitness) {
@@ -63,8 +65,9 @@ void Spot::nextStepPop() {
             }
             else {
                 secondParent = m_creatures[i];
-                //Ten offsprings
+                //Ten offsprings7
                 for (int i = 0; i < 10; i++) {
+					nbNu++;
                     newGeneration.push_back(sexualReproduction(firstParent, secondParent));
                 }
                 firstParent = nullptr;
@@ -79,15 +82,15 @@ void Spot::nextStepPop() {
     // Cap population at 50 creatures
     auto randomShuffle = std::default_random_engine {};
     std::shuffle(std::begin(newGeneration), std::end(newGeneration), randomShuffle);
-    std::vector<Creature*> newGenerationCut(&newGeneration[0], &newGeneration[fmin(50, newGeneration.size())]);
+    //std::vector<Creature*> newGenerationCut(&newGeneration[0], &newGeneration[fmin(50, newGeneration.size())]);
     
     // Distribute new generation between this spot and its neighbours
-    for (int i = 0; i < newGenerationCut.size(); i++) {
+    for (int i = 0; i < newGeneration.size(); i++) {
         int xModifier = rand() % 3 - 1;
         int yModifier = rand() % 3 - 1;
         int xReal = (m_x + xModifier + m_world->getSize()) % m_world->getSize();
         int yReal = (m_y + yModifier + m_world->getSize()) % m_world->getSize();
-        m_world->getPointerToSpot(xReal, yReal)->addCreature(newGenerationCut[i]);
+        m_world->getPointerToSpot(xReal, yReal)->addCreature(newGeneration[i]);
     }
 }
 

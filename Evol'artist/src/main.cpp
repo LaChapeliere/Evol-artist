@@ -13,6 +13,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>
+#include <ctime>
 #include "simulEngine/World.hpp"
 #include "simulEngine/FitnessFunctions.hpp"
 using namespace std;
@@ -29,10 +30,23 @@ int main(){
     globalEnv.insert(std::make_pair("test", std::make_pair(50, 10)));
     globalEnv.insert(std::make_pair("test2", std::make_pair(45, 0)));
     
-    World myWorld(10, 2500, testGenome, globalEnv);
-    for (int i = 0; i < 100; i++) {
+    std::clock_t start;
+    double now;
+    
+    World myWorld(4, 100, testGenome, globalEnv);
+    start = std::clock();
+    
+    for (int i = 0; i < 20; i++) {
         myWorld.runSimulationStep();
-        std::cout << myWorld.getPercentageGene("CC") << std::endl;
+        now = ( std::clock() - start ) / (double) CLOCKS_PER_SEC;
+        std::cout << "STEPP//" << (i+1) 
+				  //<< "//NBCREATURES//"  << myWorld.getNbCreatures() 
+				  << "//TIME//" << now 
+				  //<< "//%GENE//"<< myWorld.getPercentageGene("CC") 
+				  << "//" << std::endl;
+		int lol = myWorld.getNbCreatures();
+		std::cout << "//NB CREATUR TOTALL//" << lol << "//" << std::endl << std::endl;
+        //std::cout << "PERCENTAGEGENE/" << myWorld.getPercentageGene("CC") << std::endl;
     }
     
     cout << "Goodbye World!" << endl;

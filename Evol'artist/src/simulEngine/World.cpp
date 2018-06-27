@@ -6,7 +6,7 @@
 //  Copyright GNU General Public License v3.0
 //
 //  Last modified by Emma Barme on 29/09/2017
-
+#include <iostream>
 #include "World.hpp"
 
 World::World(const int size, const int nbCreatures, const std::string genome, std::map<std::string, std::pair<int, int>> globalEnv): m_size(size) {
@@ -35,7 +35,7 @@ World::World(const int size, const int nbCreatures, const std::string genome, st
     
     for (int y = 0; y < m_size; y++) {
         for (int x = 0; x < m_size; x++) {
-            std::cout << x << " " << y << std::endl;
+            //std::cout << x << " " << y << std::endl;
             std::map<std::string, int> spotEnv = m_grid[x + y * m_size]->getEnv();
             for (auto const &envChar : spotEnv) {
                 std::cout << envChar.first << " " << envChar.second << std::endl;
@@ -81,6 +81,27 @@ const double World::getMutationRate() const {
     return m_mutationProb;
 }
 
+const int World::getNbCreatures() const {
+	int nb = 0;
+	int stupid= 0;
+	for (int i = 0; i < m_size * m_size; i++)
+	{
+		int creaSpot = m_grid[i]->getNbCreatures();
+		std::cout << creaSpot;
+		if (creaSpot < 10) std::cout << " ";
+		std::cout << "|";
+		if (stupid++ == (m_size-1))
+		{
+			std::cout << std::endl;
+			stupid=0;
+		}
+		
+		nb += m_grid[i]->getNbCreatures();
+	}
+	std::cout << std::endl;
+	return nb;
+}
+
 const double World::getCrossoverRate() const {
     return m_crossoverProb;
 }
@@ -113,8 +134,9 @@ int World::getPercentageGene(std::string gene) const {
     for (int x = 0; x < m_size; x++) {
         for (int y = 0; y < m_size; y++) {
             Spot* s = getPointerToSpot(x, y);
-            totalPop += s->getNbCreatures();
-            for (int i = 0; i < s->getNbCreatures(); i++) {
+            int spotCreatur = s->getNbCreatures();
+            totalPop += spotCreatur;
+            for (int i = 0; i < spotCreatur; i++) {
                 Creature* c = s->getCreatureFromIndex(i);
                 if (c->hasGene(gene)) {
                     genePop += 1;
