@@ -59,16 +59,17 @@ namespace Application
             m_age = 0;
             m_incubationTime = 0;
             m_lastCreatureId = -1;
+            m_bases = new List<char>();
+            m_grid = new List<Spot>();
             m_bases.Add('B');
             m_bases.Add('C');
             m_bases.Add('D');
-
             //Create grid of Spots
             for (int y = 0; y < m_size; y++)
             {
                 for (int x = 0; x < m_size; x++)
                 {
-                    Dictionary<string, int> env = null;
+                    Dictionary<string, int> env = new Dictionary<string, int>();
                     foreach (KeyValuePair<string, Tuple<int, int>> entry in globalEnv)
                     {
                         double envCharValue = normalDistribution(entry.Value.Item1, entry.Value.Item2);
@@ -176,7 +177,7 @@ namespace Application
         /*
          * Run one simulation step
          */
-        public void runSimulationStep() {
+        public void RunSimulationStep() {
             for (int i = 0; i < m_size * m_size; i++) {
                 Spot s = m_grid[i];
                 /*std::cout << s->getNbCreatures() << std::endl;
@@ -196,7 +197,7 @@ namespace Application
          * Get percentage of the world population with a given gene
          * @return The percentage
          */
-        public int getPercentageGene(string gene) {
+        public int GetPercentageGene(string gene) {
             int totalPop = 0;
             int genePop = 0;
     
