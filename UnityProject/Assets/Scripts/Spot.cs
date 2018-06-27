@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 namespace Application
 {
     public class Spot
@@ -84,7 +86,7 @@ namespace Application
          * @param id Identifier of the creature to remove from m_creatures
          */
         public void removeCreature(int id) {
-            var itemToRemove = m_creatures.SingleOrDefault(r => r.getId == id);
+            var itemToRemove = m_creatures.SingleOrDefault(r => r.getId() == id);
             if (itemToRemove != null)
             {
                 m_creatures.Remove(itemToRemove);
@@ -162,7 +164,7 @@ namespace Application
             int selectedParent = 0;
             string genome = "";
             const int i = 100000;
-            for (char c = 0; c < parentGenomes[selectedParent].Count; c++)
+            for (int c = 0; c < parentGenomes[selectedParent].Length; c++)
             {
                 // Copy selected parent genome
                 char newBase = parentGenomes[selectedParent][c];
@@ -182,7 +184,10 @@ namespace Application
                     //Mutation
                     List<char> bases = m_world.getPossibleBases();
                     char mutationBase = bases[rng.Next(0, bases.Count)];
-                    genome[c] = mutationBase;
+                    //genome[c] = mutationBase;
+                    StringBuilder sb = new StringBuilder(genome);
+                    sb[c] = mutationBase;
+                    genome = sb.ToString();
                 }
             }
 

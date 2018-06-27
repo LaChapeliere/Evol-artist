@@ -114,13 +114,13 @@ namespace Application
         public List<string> interpretGenome() {
             // Get list of genes using regular expressions
             Regex genesRegex = new Regex("A[BCD]{2,3}E");
-            List<string> genes;
+            List<string> genes = new List<string>();
             Match match = genesRegex.Match(m_genome);
             while (match.Success) {
                 string gene = match.Value;
-                gene = gene.Substring(1, gene.Count - 2);
+                gene = gene.Substring(1, gene.Length - 2);
                 genes.Add(gene);
-                match.nextMatch();
+                match.NextMatch();
             }
             return genes;
         }
@@ -131,7 +131,7 @@ namespace Application
          * @return True if the gene is present
          */
         public bool hasGene(string gene) {
-            return genes.Exists(s => s == gene);
+            return m_genes.Exists(s => s == gene);
         }
     }
 }
