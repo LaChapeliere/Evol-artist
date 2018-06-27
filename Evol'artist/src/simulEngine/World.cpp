@@ -49,8 +49,6 @@ World::World(const int size, const int nbCreatures, const std::string genome, st
     for (int i = 0; i < nbCreatures; i++) {
         int randX = rand() % m_size;
         int randY = rand() % m_size;
-        std::map<std::string, int> env;
-        env.insert(std::make_pair("global", 29));
         Creature* newCreature = new Creature(getNewCreatureId(), genome, randX, randY, m_grid[randX + randY * m_size]->getEnv());
         m_grid[randX + randY * m_size]->addCreature(newCreature);
     }

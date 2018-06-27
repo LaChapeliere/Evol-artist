@@ -99,12 +99,6 @@ public:
     const int getNewCreatureId();
     
     /**
-    * Get the number of Creature objects in the world
-    * @return m_creatures.size()
-    */
-    const int getNbCreatures() const;
-    
-    /**
      * Get the mutation rate
      * @return m_mutationProb
      */
