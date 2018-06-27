@@ -128,6 +128,7 @@ namespace Application
                         secondParent = null;
                     }
                 }
+                Test.Print("test");
             }
 
             //Remove old generation

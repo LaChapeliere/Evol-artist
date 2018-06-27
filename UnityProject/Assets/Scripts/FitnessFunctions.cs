@@ -15,8 +15,9 @@ namespace Application
          * FitnessFunctions constructor
          */
         public FitnessFunctions() {
-            m_fitnessFunctions["BB"] = map => 10;
-            m_fitnessFunctions["BC"] = map => map["test"];
+            m_fitnessFunctions = new Dictionary<string, Func<Dictionary<string, int>, int>>();
+            m_fitnessFunctions.Add("BB", (env) => { return 10; });
+            m_fitnessFunctions.Add("BC", (env) => { return 11; });
         }
 
         /*

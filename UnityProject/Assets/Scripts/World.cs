@@ -65,6 +65,8 @@ namespace Application
             m_bases.Add('C');
             m_bases.Add('D');
             //Create grid of Spots
+
+            Test.print("Pre-spot");
             for (int y = 0; y < m_size; y++)
             {
                 for (int x = 0; x < m_size; x++)
@@ -79,6 +81,7 @@ namespace Application
                     m_grid.Add(spot);
                 }
             }
+            Test.print("Post-spot");
             /*
             for (int y = 0; y<m_size; y++) {
                 for (int x = 0; x<m_size; x++) {
@@ -92,13 +95,18 @@ namespace Application
 
             //Add the Creatures in the grid
             Random rnd = new Random();
+            Test.print("Pre-creature");
             for (int i = 0; i < nbCreatures; i++)
             {
                 int randX = rnd.Next(0, m_size);
                 int randY = rnd.Next(0, m_size);
+                Test.print("Pre-creature");
                 Creature newCreature = new Creature(getNewCreatureId(), genome, randX, randY, m_grid[randX + randY * m_size].getEnv());
+                Test.print("Post-creature");
                 m_grid[randX + randY * m_size].addCreature(newCreature);
+                Test.print(i.ToString());
             }
+            Test.print("End world");
         }
 
         /*
