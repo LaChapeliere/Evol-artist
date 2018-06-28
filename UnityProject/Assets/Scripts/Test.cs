@@ -35,6 +35,7 @@ namespace Application
                 myWorld.RunSimulationStep();
                 Debug.Log(myWorld.GetPercentageGene("CC"));
             }
+            Debug.Log("End");
         }
 
         // Update is called once per frame

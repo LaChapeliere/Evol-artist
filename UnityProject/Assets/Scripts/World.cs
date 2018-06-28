@@ -100,11 +100,11 @@ namespace Application
             {
                 int randX = rnd.Next(0, m_size);
                 int randY = rnd.Next(0, m_size);
-                Test.print("Pre-creature");
+                //Test.print("Pre-creature");
                 Creature newCreature = new Creature(getNewCreatureId(), genome, randX, randY, m_grid[randX + randY * m_size].getEnv());
-                Test.print("Post-creature");
+                //Test.print("Post-creature");
                 m_grid[randX + randY * m_size].addCreature(newCreature);
-                Test.print(i.ToString());
+                //Test.print(i.ToString());
             }
             Test.print("End world");
         }

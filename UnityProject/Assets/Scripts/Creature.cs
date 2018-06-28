@@ -55,6 +55,7 @@ namespace Application
             FitnessFunctions f = new FitnessFunctions();
             Test.Print("pre-fitness");
             m_fitness = f.getFitness(m_genes, env);
+            Test.Print("post-fitness");
 
             //Coordinates
             m_x = x;
