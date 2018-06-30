@@ -53,7 +53,7 @@ namespace Application
 
             // Get fitness
             FitnessFunctions f = new FitnessFunctions();
-            Test.Print("pre-fitness");
+            Test.Print("between-fitness");
             m_fitness = f.getFitness(m_genes, env);
             Test.Print("post-fitness");
 

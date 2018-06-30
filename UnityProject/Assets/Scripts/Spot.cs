@@ -26,7 +26,7 @@ namespace Application
         /*
          * List of Creatures (pointers) on this spot
          */
-        private List<Creature> m_creatures = null;
+        private List<Creature> m_creatures = new List<Creature>();
 
         /*
          * Dictionary describing the environment
@@ -98,8 +98,7 @@ namespace Application
          */
         public void nextStepPop() {
             // Create new generation
-            List<Creature> newGeneration = null;
-
+            List<Creature> newGeneration = new List<Creature>();
             // Get random order of creatures
             m_creatures.Shuffle();
 
@@ -115,6 +114,7 @@ namespace Application
                     if (firstParent == null)
                     {
                         firstParent = m_creatures[i];
+                        //Test.print("passage1.1");
                     }
                     else
                     {
@@ -126,18 +126,26 @@ namespace Application
                         }
                         firstParent = null;
                         secondParent = null;
+                        //Test.print("passage1.2");
                     }
                 }
-                Test.Print("test");
             }
-
             //Remove old generation
             m_creatures.Clear();
-
             // Cap population at 50 creatures
             newGeneration.Shuffle();
-            List<Creature> newGenerationCut = newGeneration.GetRange(0, 50);
-
+            //Test.print("passage2");
+            int nb = 0;
+            if(newGeneration.Count > 50)
+            {
+                nb = 50;
+            }
+            else
+            {
+                nb = newGeneration.Count;
+            }
+            List <Creature> newGenerationCut = newGeneration.GetRange(0, nb);
+            //Test.print("Passage3");
             // Distribute new generation between this spot and its neighbours
             for (int i = 0; i < newGenerationCut.Count; i++)
             {
@@ -159,7 +167,7 @@ namespace Application
             Tuple<int, int> parentCoords = firstParent.getCoord();
 
             // Genome is that of combination of parents plus mutation step
-            List<string> parentGenomes = null;
+            List<string> parentGenomes = new List<string>();
             parentGenomes.Add(firstParent.getGenome());
             parentGenomes.Add(secondParent.getGenome());
             int selectedParent = 0;

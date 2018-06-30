@@ -23,7 +23,7 @@ namespace Application
         /*
          * Flattened matrix of Spot objects, represent the grid
          */
-        private List<Spot> m_grid = null;
+        private List<Spot> m_grid;
 
         /*
          * Identifier of most recent Creature object
@@ -66,7 +66,7 @@ namespace Application
             m_bases.Add('D');
             //Create grid of Spots
 
-            Test.print("Pre-spot");
+            //Test.print("Pre-spot");
             for (int y = 0; y < m_size; y++)
             {
                 for (int x = 0; x < m_size; x++)
@@ -81,7 +81,7 @@ namespace Application
                     m_grid.Add(spot);
                 }
             }
-            Test.print("Post-spot");
+            //Test.print("Post-spot");
             /*
             for (int y = 0; y<m_size; y++) {
                 for (int x = 0; x<m_size; x++) {
@@ -95,7 +95,7 @@ namespace Application
 
             //Add the Creatures in the grid
             Random rnd = new Random();
-            Test.print("Pre-creature");
+            //Test.print("Pre-creature");
             for (int i = 0; i < nbCreatures; i++)
             {
                 int randX = rnd.Next(0, m_size);
@@ -106,7 +106,7 @@ namespace Application
                 m_grid[randX + randY * m_size].addCreature(newCreature);
                 //Test.print(i.ToString());
             }
-            Test.print("End world");
+            //Test.print("End world");
         }
 
         /*
@@ -187,6 +187,7 @@ namespace Application
          */
         public void RunSimulationStep() {
             for (int i = 0; i < m_size * m_size; i++) {
+                //Test.print("pre-simulation");
                 Spot s = m_grid[i];
                 /*std::cout << s->getNbCreatures() << std::endl;
                 for (int i = 0; i < s->getNbCreatures(); i++) {
@@ -194,7 +195,9 @@ namespace Application
                         std::cout << c->getId() << " " << c->getFitness() << " " << c->getGenome() << std::endl;
                 }*/
                 s.nextStepPop();
+                //Test.print("post-simulation");
             }
+            //Test.print("End simulation");
             //std::cout << std::endl << std::endl;
         }
 
