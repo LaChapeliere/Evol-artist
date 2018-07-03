@@ -43,6 +43,8 @@ namespace Application
          * @param y Vertical coordinate
          * @param env Dict describing environment
          */
+         public List<List<Creature>> Case = new List<List<Creature>>();
+
         public Creature(int id, string genome, int x, int y, Dictionary<string, int> env)
         {
             //Initialise attributes
