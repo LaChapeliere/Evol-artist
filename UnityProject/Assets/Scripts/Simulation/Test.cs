@@ -28,6 +28,9 @@ namespace Application
         public Card Card;
         public GameObject[] card;
 
+        private int Percent;
+        private bool IsPlaying = false;
+
         // Use this for initialization
         void Start()
         {
@@ -62,10 +65,20 @@ namespace Application
             {
                 //Debug.Log("Pre-simulation step");
                 myWorld.RunSimulationStep();
-                Debug.Log(myWorld.GetPercentageGene("CC"));
+                Percent = myWorld.GetPercentageGene("CC");
+                Debug.Log(Percent);
             }
-            Debug.Log("End");
-            first = false;
+            if (Percent > 10)
+            {
+                Debug.Log("End");
+                first = false;
+            }
+            else
+            {
+                Debug.Log("your creature is dead");
+                first = true;
+            }
+            IsPlaying = false;
         }
 
         // Update is called once per frame
@@ -86,17 +99,23 @@ namespace Application
 
         public void StartSimulation()
         {
-            hexa = player.hexagone[player.CaseActu].GetComponent<Hexagone>();
-            Value1[0] = hexa.Value[0];
+            if (!IsPlaying)
+            {
+                hexa = player.hexagone[player.CaseActu].GetComponent<Hexagone>();
+                Value1[0] = hexa.Value[0];
+                player.Deplacement = 1;
 
-            int output = UnityEngine.Random.Range(0, card.Length - 1);
-            GameObject obj;
-            obj = Instantiate(card[output], new Vector3(-12.5f, -4.3f, 0), transform.rotation);
-            obj.GetComponent<Card>().move = false;
-            obj.transform.position = new Vector3(-12.5f, -4.3f, 0);
+                int output = UnityEngine.Random.Range(0, card.Length - 1);
+                GameObject obj;
+                obj = Instantiate(card[output], new Vector3(-12.5f, -4.3f, 0), transform.rotation);
+                obj.GetComponent<Card>().move = false;
+                obj.transform.position = new Vector3(-12.5f, -4.3f, 0);
 
-            m_thread = new Thread(TestFunction);
-            m_thread.Start();
+                IsPlaying = true;
+
+                m_thread = new Thread(TestFunction);
+                m_thread.Start();
+            }
         }
 
         public void CloseInfo()

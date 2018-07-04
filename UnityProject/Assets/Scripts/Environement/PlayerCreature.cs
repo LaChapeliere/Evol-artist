@@ -11,6 +11,7 @@ namespace Application
         public Test test;
         public int CaseActu = 0;
         public bool isClick = false;
+        public int Deplacement = 1;
         // Use this for initialization
         void Start()
         {
@@ -42,17 +43,22 @@ namespace Application
 
         public void Move(GameObject destination)
         {
-            transform.position = destination.transform.position;
-            isClick = false;
-            selection.SetActive(false);
-            int i = 0;
-            while(destination != hexagone[i])
+            if (Deplacement > 0)
             {
-                i++;
+                transform.position = destination.transform.position;
+                isClick = false;
+                selection.SetActive(false);
+                int i = 0;
+                while (destination != hexagone[i])
+                {
+                    i++;
+                }
+                hexagone[CaseActu].GetComponent<Hexagone>().Creature = false;
+                CaseActu = i;
+                hexagone[CaseActu].GetComponent<Hexagone>().Creature = true;
+                Deplacement--;
+                Deplacement--;
             }
-            hexagone[CaseActu].GetComponent<Hexagone>().Creature = false;
-            CaseActu = i;
-            hexagone[CaseActu].GetComponent<Hexagone>().Creature = true;
         }
     }
 }
