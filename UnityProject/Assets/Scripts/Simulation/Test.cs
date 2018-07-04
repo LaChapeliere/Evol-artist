@@ -25,6 +25,9 @@ namespace Application
 
         public bool first = true;
 
+        public Card Card;
+        public GameObject[] card;
+
         // Use this for initialization
         void Start()
         {
@@ -85,6 +88,12 @@ namespace Application
         {
             hexa = player.hexagone[player.CaseActu].GetComponent<Hexagone>();
             Value1[0] = hexa.Value[0];
+
+            int output = UnityEngine.Random.Range(0, card.Length - 1);
+            GameObject obj;
+            obj = Instantiate(card[output], new Vector3(-12.5f, -4.3f, 0), transform.rotation);
+            obj.GetComponent<Card>().move = false;
+            obj.transform.position = new Vector3(-12.5f, -4.3f, 0);
 
             m_thread = new Thread(TestFunction);
             m_thread.Start();

@@ -1074,8 +1074,6 @@ MonoBehaviour:
   - {fileID: 244500198}
   - {fileID: 2115696103}
   info: {fileID: 308036736}
-  colCard: 0
-  col: {fileID: 0}
   test: {fileID: 1199288395}
 --- !u!212 &1005681092
 SpriteRenderer:
@@ -1365,7 +1363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1706530510}
   testGenome: ABCEBDDEBCDBBDCBCADDCEBCDBBCDDDCEBCDBBCDADDDEBCDBBDBBCBCCDDCABCADCCEBDEBBDABDCBEBDDEEDABCCECADDDEBCADBCE
-  Size: 6
+  Size: 3
   NbCreature: 50
   NbGeneration: 10
   Environement:
@@ -1375,6 +1373,9 @@ MonoBehaviour:
   info: {fileID: 308036736}
   infoActiv: 0
   first: 1
+  Card: {fileID: 0}
+  card:
+  - {fileID: 1320753279816766, guid: 1d0022ec2466c9f45b7c4e0efc400c18, type: 2}
 --- !u!4 &1199288396
 Transform:
   m_ObjectHideFlags: 0
@@ -1842,8 +1843,6 @@ MonoBehaviour:
   - {fileID: 244500198}
   - {fileID: 2115696103}
   info: {fileID: 308036736}
-  colCard: 0
-  col: {fileID: 0}
   test: {fileID: 1199288395}
 --- !u!212 &1533921585
 SpriteRenderer:
@@ -2163,8 +2162,6 @@ MonoBehaviour:
   - {fileID: 244500198}
   - {fileID: 2115696103}
   info: {fileID: 308036736}
-  colCard: 0
-  col: {fileID: 0}
   test: {fileID: 1199288395}
 --- !u!212 &2100626854
 SpriteRenderer:

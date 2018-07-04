@@ -7,8 +7,8 @@ namespace Application
     public class Card : MonoBehaviour
     {
         public int[] Value;
-        public GameObject[] card;
         public GameObject spawn;
+        public GameObject hexa;
 
         private Vector3 screenPoint;
         public bool move = false;
@@ -43,22 +43,37 @@ namespace Application
             }
         }
 
-        void OnMouseDown()
+        void OnMouseDrag()
         {
             if (!test.infoActiv)
             {
-                move = true;
+                test.Card = this;
+                //move = true;
+                Vector3 p = new Vector3();
+                Camera c = Camera.main;
+                Event e = Event.current;
+                Vector2 mousePos = new Vector2();
+
+                mousePos.x = Input.mousePosition.x;
+                mousePos.y = c.pixelHeight - Input.mousePosition.y;
+
+                p = c.ScreenToWorldPoint(new Vector3(mousePos.x, -mousePos.y, c.nearClipPlane));
+                transform.position = new Vector3(p.x, p.y + 10, p.z);
+            }
+        }
+        private void OnMouseUp()
+        {
+            transform.position = new Vector3(-12.5f, -4.3f, 0);
+            if(hexa != null)
+            {
+                Colision(hexa);
             }
         }
 
         public void Colision(GameObject col)
         {
             col.SendMessage("ChangeValue", Value);
-            int output = Random.Range(0, card.Length - 1);
-            GameObject obj;
-            obj = Instantiate(card[output], new Vector3(-12.5f, -4.3f, 0), transform.rotation);
-            obj.GetComponent<Card>().move = false;
-            obj.transform.position = new Vector3(-12.5f, -4.3f, 0);
+            test.Card = null;
             Destroy(gameObject);
         }
     }

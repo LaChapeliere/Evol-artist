@@ -14,8 +14,6 @@ namespace Application
         public Text[] text;
         public GameObject info;
 
-        public bool colCard = false;
-        public GameObject col;
         public Test test;
 
         // Use this for initialization
@@ -33,22 +31,30 @@ namespace Application
         private void OnMouseEnter()
         {
             transform.localScale = new Vector3(1.8f, 1.8f, 1.8f);
+            if(test.Card != null)
+            {
+                test.Card.hexa = gameObject;
+            }
         }
 
         private void OnMouseExit()
         {
             transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+            if (test.Card != null)
+            {
+                test.Card.hexa = null;
+            }
         }
 
         private void OnMouseUp()
         {
             if (!test.infoActiv)
             {
-                if (Creature && !player.isClick && !colCard)
+                if (Creature && !player.isClick)
                 {
                     player.Click();
                 }
-                else if(player.isClick && !colCard)
+                else if(player.isClick)
                 {
                     if (Creature)
                     {
@@ -63,15 +69,7 @@ namespace Application
                 }
                 else
                 {
-                    if (colCard)
-                    {
-                        col.SendMessage("Colision", gameObject);
-                        colCard = false;
-                    }
-                    else
-                    {
-                        ShowInfo();
-                    }
+                    ShowInfo();
                 }
             }
         }
@@ -85,35 +83,12 @@ namespace Application
             test.infoActiv = true;
         }
 
-        private void OnTriggerEnter2D(Collider2D collision)
-        {
-            if (collision.gameObject.tag == "Card")
-            {
-                col = collision.gameObject;
-                colCard = true;
-            }
-        }
-
-        private void OnTriggerStay2D(Collider2D collision)
-        {
-            if (collision.gameObject.tag == "Card")
-            {
-                colCard = true;
-            }
-        }
-
-        private void OnTriggerExit2D(Collider2D collision)
-        {
-            colCard = false;
-        }
-
         public void ChangeValue(int[] NewValue)
         {
             for (int i = 0; i < Value.Length; i++)
             {
                 Value[i] += NewValue[i];
             }
-            colCard = false;
         }
     }
 }
