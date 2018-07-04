@@ -9,15 +9,6 @@ namespace Application
     public class Test : MonoBehaviour
     {
         Thread m_thread;
-        public int size = 6;
-        public int nbCreature = 100;
-        public int nbGeneration = 10;
-        //public List<string> DictionaryName = new List<string>();
-        //public List<List<int>> DictionaryValue = new List<List<int>>();
-        public Dictionary<string, Tuple<int, int>> globalEnv;
-        public string[] DictionaryName = new string[0];
-        public int[] DictionaryValue1 = new int[0];
-        public int[] DictionaryValue2 = new int[0];
 
         // Use this for initialization
         void Start()
@@ -29,27 +20,16 @@ namespace Application
        void TestFunction()
         {
             //Debug.Log("Pre-init");
-            globalEnv = new Dictionary<string, Tuple<int, int>>();
-            //globalEnv.Add("test", new Tuple<int, int>(50, 10));
-            //globalEnv.Add("test2", new Tuple<int, int>(45, 0));
-            if (DictionaryValue1.Length >= DictionaryName.Length & DictionaryValue2.Length >= DictionaryName.Length)
-            {
-                for (int i = 0; i < DictionaryName.Length; i++)
-                {
-                    globalEnv.Add(DictionaryName[i], new Tuple<int, int>(DictionaryValue1[i], DictionaryValue2[i]));
-                }
-            }
-            else
-            {
-                Debug.Log("Error, environement can't be load");
-            }
+            Dictionary<string, Tuple<int, int>> globalEnv = new Dictionary<string, Tuple<int, int>>();
+            globalEnv.Add("test", new Tuple<int, int>(50, 10));
+            globalEnv.Add("test2", new Tuple<int, int>(45, 0));
 
             string testGenome = "ABCEBDDEBCDBBDCBCADDCEBCDBBCDDDCEBCDBBCDADDDEBCDBBDBBCBCCDDCABCADCCEBDEBBDABDCBEBDDEEDABCCECADDDEBCADBCE";
 
             //Debug.Log("Pre-world");
-            World myWorld = new World(size, nbCreature, testGenome, globalEnv);
+            World myWorld = new World(6, 100, testGenome, globalEnv);
             //Debug.Log("Post-world");
-            for (int i = 0; i < nbGeneration; i++)
+            for (int i = 0; i < 10; i++)
             {
                 //Debug.Log("Pre-simulation step");
                 myWorld.RunSimulationStep();

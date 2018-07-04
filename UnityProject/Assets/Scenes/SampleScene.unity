@@ -213,14 +213,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0d446d9275870488b2dcc247a19b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 6
-  nbCreature: 100
-  nbGeneration: 10
-  DictionaryName:
-  - test1
-  - test2
-  DictionaryValue1: 320000002d000000
-  DictionaryValue2: 0a00000000000000
 --- !u!4 &1199288396
 Transform:
   m_ObjectHideFlags: 0
