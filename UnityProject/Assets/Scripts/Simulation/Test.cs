@@ -9,6 +9,8 @@ namespace Application
     public class Test : MonoBehaviour
     {
         World myWorld;
+        Hexagone hexa;
+        public PlayerCreature player;
         Thread m_thread;
         public string testGenome = "ABCEBDDEBCDBBDCBCADDCEBCDBBCDDDCEBCDBBCDADDDEBCDBBDBBCBCCDDCABCADCCEBDEBBDABDCBEBDDEEDABCCECADDDEBCADBCE";
         public int Size;
@@ -19,6 +21,7 @@ namespace Application
         public int[] Value2;
 
         public GameObject info;
+        public bool infoActiv = false;
 
         public bool first = true;
 
@@ -80,6 +83,9 @@ namespace Application
 
         public void StartSimulation()
         {
+            hexa = player.hexagone[player.CaseActu].GetComponent<Hexagone>();
+            Value1[0] = hexa.Value[0];
+
             m_thread = new Thread(TestFunction);
             m_thread.Start();
         }
@@ -87,6 +93,7 @@ namespace Application
         public void CloseInfo()
         {
             info.SetActive(false);
+            infoActiv = false;
         }
     }
 }
