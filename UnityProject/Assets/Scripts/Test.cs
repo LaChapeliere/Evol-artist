@@ -8,22 +8,23 @@ namespace Application
 {
     public class Test : MonoBehaviour
     {
-        Thread m_thread;
+        private Thread m_thread;
+        private World myWorld;
         public int size = 6;
         public int nbCreature = 100;
         public int nbGeneration = 10;
-        //public List<string> DictionaryName = new List<string>();
-        //public List<List<int>> DictionaryValue = new List<List<int>>();
-        public Dictionary<string, Tuple<int, int>> globalEnv;
+        public string testGenome = "ABCEBDDEBCDBBDCBCADDCEBCDBBCDDDCEBCDBBCDADDDEBCDBBDBBCBCCDDCABCADCCEBDEBBDABDCBEBDDEEDABCCECADDDEBCADBCE";
+        private Dictionary<string, Tuple<int, int>> globalEnv;
         public string[] DictionaryName = new string[0];
         public int[] DictionaryValue1 = new int[0];
         public int[] DictionaryValue2 = new int[0];
 
+        public bool first = true;
+
         // Use this for initialization
         void Start()
         {
-            m_thread = new Thread(TestFunction);
-            m_thread.Start();
+         
         }
 
        void TestFunction()
@@ -43,11 +44,16 @@ namespace Application
             {
                 Debug.Log("Error, environement can't be load");
             }
-
-            string testGenome = "ABCEBDDEBCDBBDCBCADDCEBCDBBCDDDCEBCDBBCDADDDEBCDBBDBBCBCCDDCABCADCCEBDEBBDABDCBEBDDEEDABCCECADDDEBCADBCE";
-
             //Debug.Log("Pre-world");
-            World myWorld = new World(size, nbCreature, testGenome, globalEnv);
+
+            if (first)
+            {
+                myWorld = new World(size, nbCreature, testGenome, globalEnv);
+            }
+            else
+            {
+                myWorld.NewEnvironement(globalEnv);
+            }
             //Debug.Log("Post-world");
             for (int i = 0; i < nbGeneration; i++)
             {
@@ -56,6 +62,7 @@ namespace Application
                 Debug.Log(myWorld.GetPercentageGene("CC"));
             }
             Debug.Log("End");
+            first = false;
         }
 
         // Update is called once per frame
@@ -72,6 +79,12 @@ namespace Application
         private void OnApplicationQuit()
         {
             m_thread.Abort();
+        }
+
+        public void StartSimulation()
+        {
+            m_thread = new Thread(TestFunction);
+            m_thread.Start();
         }
     }
 }

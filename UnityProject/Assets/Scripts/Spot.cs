@@ -202,6 +202,11 @@ namespace Application
 
             return new Creature(m_world.getNewCreatureId(), genome, parentCoords.Item1, parentCoords.Item1, m_env);
         }
+
+        public void NewEnvironement(Dictionary<string, int> env)
+        {
+            m_env = env;
+        }
     }
 
     public static class List {

@@ -20,7 +20,7 @@ namespace Application
             m_fitnessFunctions.Add("BC", (env) => { return 11; });
             m_fitnessFunctions.Add("BD", (env) => { return 12; });
             m_fitnessFunctions.Add("CB", (env) => { return 13; });
-            m_fitnessFunctions.Add("CC", (env) => { return 89; });
+            m_fitnessFunctions.Add("CC", (env) => { return 89 + env["Humidity"]; });
             m_fitnessFunctions.Add("CD", (env) => { return 70; });
             m_fitnessFunctions.Add("DB", (env) => { return 16; });
             m_fitnessFunctions.Add("DC", (env) => { return 17; });

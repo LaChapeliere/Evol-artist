@@ -251,5 +251,19 @@ namespace Application
             double randNormal = mean + std * randStdNormal; //random normal(mean,stdDev^2)
             return randNormal;
         }
+
+        public void NewEnvironement(Dictionary<string, Tuple<int, int>> globalEnv)
+        {
+            for (int x = 0; x < m_size * m_size; x++)
+            {
+                Dictionary<string, int> env = new Dictionary<string, int>();
+                foreach (KeyValuePair<string, Tuple<int, int>> entry in globalEnv)
+                {
+                    double envCharValue = normalDistribution(entry.Value.Item1, entry.Value.Item2);
+                    env.Add(entry.Key, (int)envCharValue);
+                }
+                m_grid[x].NewEnvironement(env);
+            }
+        }
     }
 }
