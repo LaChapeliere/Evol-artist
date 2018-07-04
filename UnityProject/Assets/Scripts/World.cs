@@ -106,10 +106,6 @@ namespace Application
                 m_grid[randX + randY * m_size].addCreature(newCreature);
                 //Test.print(i.ToString());
             }
-            Test.Print2("nombre creature1 = " + m_grid[0].getNbCreatures().ToString());
-            Test.Print2("nombre creature2 = " + m_grid[1].getNbCreatures().ToString());
-            Test.Print2("nombre creature3 = " + m_grid[2].getNbCreatures().ToString());
-            Test.Print2("nombre creature4 = " + m_grid[3].getNbCreatures().ToString());
             //Test.print("End world");
         }
 
@@ -254,23 +250,6 @@ namespace Application
             Math.Sin(2.0 * Math.PI * u2); //random normal(0,1)
             double randNormal = mean + std * randStdNormal; //random normal(mean,stdDev^2)
             return randNormal;
-        }
-
-        public void NewEnv(Dictionary<string, Tuple<int, int>> globalEnv)
-        {
-            for (int y = 0; y < m_size; y++)
-            {
-                for (int x = 0; x < m_size; x++)
-                {
-                    Dictionary<string, int> env = new Dictionary<string, int>();
-                    foreach (KeyValuePair<string, Tuple<int, int>> entry in globalEnv)
-                    {
-                        double envCharValue = normalDistribution(entry.Value.Item1, entry.Value.Item2);
-                        env.Add(entry.Key, (int)envCharValue);
-                    }
-                    m_grid[y*x].NewEnv(env);
-                }
-            }
         }
     }
 }

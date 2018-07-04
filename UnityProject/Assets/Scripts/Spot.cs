@@ -105,10 +105,9 @@ namespace Application
             // For each creature decide if reproduction
             Creature firstParent = null;
             Creature secondParent = null;
-            int nbCrea = 0;
-            for (int i = 0; i < m_creatures.Count && nbCrea < 50; i++)
+            for (int i = 0; i < m_creatures.Count; i++)
             {
-                int dice = rng.Next(0,1001);
+                int dice = rng.Next(0,101);
                 int fitness = m_creatures[i].getFitness();
                 if (dice < fitness)
                 {
@@ -123,7 +122,6 @@ namespace Application
                         //Ten offsprings
                         for (int c = 0; c < 10; c++)
                         {
-                            nbCrea++;
                             newGeneration.Add(sexualReproduction(firstParent, secondParent));
                         }
                         firstParent = null;
@@ -203,11 +201,6 @@ namespace Application
             }
 
             return new Creature(m_world.getNewCreatureId(), genome, parentCoords.Item1, parentCoords.Item1, m_env);
-        }
-
-        public void NewEnv(Dictionary<string, int> globalEnv)
-        {
-            m_env = globalEnv;
         }
     }
 
