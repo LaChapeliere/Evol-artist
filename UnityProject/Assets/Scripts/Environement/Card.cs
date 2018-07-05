@@ -63,7 +63,7 @@ namespace Application
         }
         private void OnMouseUp()
         {
-            transform.position = new Vector3(-12.5f, -4.3f, 0);
+            transform.position = new Vector3(-12.5f, -4.3f, 1.75f);
             if(hexa != null)
             {
                 Colision(hexa);

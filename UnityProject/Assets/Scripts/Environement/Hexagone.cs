@@ -30,7 +30,7 @@ namespace Application
 
         private void OnMouseEnter()
         {
-            transform.localScale = new Vector3(1.8f, 1.8f, 1.8f);
+            transform.localScale = new Vector3(1, 1, 1);
             if(test.Card != null)
             {
                 test.Card.hexa = gameObject;
@@ -39,7 +39,7 @@ namespace Application
 
         private void OnMouseExit()
         {
-            transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+            transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
             if (test.Card != null)
             {
                 test.Card.hexa = null;
