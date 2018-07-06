@@ -34,7 +34,7 @@ namespace Application
         // Use this for initialization
         void Start()
         {
-            //info.SetActive(false);
+            info.SetActive(false);
         }
 
        void TestFunction()
@@ -105,10 +105,11 @@ namespace Application
                 Value1[0] = hexa.Value[0];
                 player.Deplacement = 1;
 
-                int output = UnityEngine.Random.Range(0, card.Length);
+                int output = UnityEngine.Random.Range(0, card.Length - 1);
                 GameObject obj;
-                obj = Instantiate(card[output], new Vector3(-0.3f, -6, 2.75f), transform.rotation);
-                obj.transform.position = new Vector3(-0.3f, -6, 2.75f);
+                obj = Instantiate(card[output], new Vector3(-12.5f, -4.3f, 0), transform.rotation);
+                obj.GetComponent<Card>().move = false;
+                obj.transform.position = new Vector3(-12.5f, -4.3f, 0);
 
                 IsPlaying = true;
 
@@ -119,7 +120,7 @@ namespace Application
 
         public void CloseInfo()
         {
-            //info.SetActive(false);
+            info.SetActive(false);
             infoActiv = false;
         }
     }

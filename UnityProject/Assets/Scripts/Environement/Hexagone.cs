@@ -9,9 +9,9 @@ namespace Application
     {
         public bool Creature = false;
         public PlayerCreature player;
-        public int[] Value = new int[5];
+        public int[] Value;
 
-        public Text[] text = new Text[3];
+        public Text[] text;
         public GameObject info;
 
         public Test test;
@@ -19,12 +19,7 @@ namespace Application
         // Use this for initialization
         void Start()
         {
-            player = GameObject.Find("cat").GetComponent<PlayerCreature>();
-            text[0] = GameObject.Find("Humidity").GetComponent<Text>();
-            text[1] = GameObject.Find("Nourriture").GetComponent<Text>();
-            text[2] = GameObject.Find("Predator").GetComponent<Text>();
-            info = GameObject.Find("Info");
-            test = GameObject.Find("Simulation").GetComponent<Test>();         
+
         }
 
         // Update is called once per frame
@@ -35,20 +30,20 @@ namespace Application
 
         private void OnMouseEnter()
         {
-            transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
-            /*if(test.Card != null)
+            transform.localScale = new Vector3(1, 1, 1);
+            if(test.Card != null)
             {
                 test.Card.hexa = gameObject;
-            }*/
+            }
         }
 
         private void OnMouseExit()
         {
-            transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
-            /*if (test.Card != null)
+            transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
+            if (test.Card != null)
             {
                 test.Card.hexa = null;
-            }*/
+            }
         }
 
         private void OnMouseUp()
@@ -85,7 +80,7 @@ namespace Application
             text[1].text = "Food: " + Value[1];
             text[2].text = "Predator: " + Value[2];
             info.SetActive(true);
-            //test.infoActiv = true;
+            test.infoActiv = true;
         }
 
         public void ChangeValue(int[] NewValue)
