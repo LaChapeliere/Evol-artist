@@ -11,8 +11,9 @@ namespace Application
         public GameObject hexa;
 
         private Vector3 screenPoint;
-        public bool move = false;
         public Test test;
+
+        public GameObject Terrain;
 
         // Use this for initialization
         void Start()
@@ -23,24 +24,7 @@ namespace Application
         // Update is called once per frame
         void Update()
         {
-            if (move)
-            {
-                Vector3 p = new Vector3();
-                Camera c = Camera.main;
-                Event e = Event.current;
-                Vector2 mousePos = new Vector2();
 
-                mousePos.x = Input.mousePosition.x;
-                mousePos.y = c.pixelHeight - Input.mousePosition.y;
-
-                p = c.ScreenToWorldPoint(new Vector3(mousePos.x, -mousePos.y, c.nearClipPlane));
-                transform.position = new Vector3(p.x, p.y + 10, p.z);
-            }
-            if (Input.GetKeyDown(KeyCode.Mouse1))
-            {
-                move = false;
-                transform.position = new Vector3(-12.5f, -4.3f, 0);
-            }
         }
 
         void OnMouseDrag()
@@ -58,15 +42,20 @@ namespace Application
                 mousePos.y = c.pixelHeight - Input.mousePosition.y;
 
                 p = c.ScreenToWorldPoint(new Vector3(mousePos.x, -mousePos.y, c.nearClipPlane));
-                transform.position = new Vector3(p.x, p.y + 10, p.z);
+                transform.position = new Vector3(p.x, p.y + 8, 10);
             }
         }
         private void OnMouseUp()
         {
-            transform.position = new Vector3(-12.5f, -4.3f, 1.75f);
+            transform.position = new Vector3(-0.3f, -6, 2.75f);
             if(hexa != null)
             {
-                Colision(hexa);
+                //Colision(hexa);
+                GameObject newTerrain;
+                newTerrain = Instantiate(Terrain, hexa.transform.position, hexa.transform.rotation);
+                newTerrain.GetComponent<Hexagone>().Value = Value;
+                test.Card = null;
+                Destroy(gameObject);
             }
         }
 
