@@ -11,9 +11,8 @@ namespace Application
         public GameObject hexa;
 
         private Vector3 screenPoint;
+        public bool move = false;
         public Test test;
-
-        public GameObject Terrain;
 
         // Use this for initialization
         void Start()
@@ -24,7 +23,24 @@ namespace Application
         // Update is called once per frame
         void Update()
         {
+            if (move)
+            {
+                Vector3 p = new Vector3();
+                Camera c = Camera.main;
+                Event e = Event.current;
+                Vector2 mousePos = new Vector2();
 
+                mousePos.x = Input.mousePosition.x;
+                mousePos.y = c.pixelHeight - Input.mousePosition.y;
+
+                p = c.ScreenToWorldPoint(new Vector3(mousePos.x, -mousePos.y, c.nearClipPlane));
+                transform.position = new Vector3(p.x, p.y + 10, p.z);
+            }
+            if (Input.GetKeyDown(KeyCode.Mouse1))
+            {
+                move = false;
+                transform.position = new Vector3(-12.5f, -4.3f, 0);
+            }
         }
 
         void OnMouseDrag()
@@ -42,14 +58,15 @@ namespace Application
                 mousePos.y = c.pixelHeight - Input.mousePosition.y;
 
                 p = c.ScreenToWorldPoint(new Vector3(mousePos.x, -mousePos.y, c.nearClipPlane));
-                transform.position = new Vector3(p.x, p.y + 8, 10);
+                transform.position = new Vector3(p.x, p.y + 10, p.z);
             }
         }
         private void OnMouseUp()
         {
-            transform.position = new Vector3(-0.3f, -6, 2.75f);
+            transform.position = new Vector3(-12.5f, -4.3f, 1.75f);
             if(hexa != null)
             {
+<<<<<<< HEAD
                 NewHexa NHexa = hexa.GetComponent<NewHexa>();
                 if (NHexa.x > 0 && NHexa.x < 8 && NHexa.y > 0 && NHexa.y < 8)
                 {
@@ -65,6 +82,9 @@ namespace Application
                         }
                     }
                 }
+=======
+                Colision(hexa);
+>>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
             }
         }
     }

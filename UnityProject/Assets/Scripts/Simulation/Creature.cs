@@ -48,14 +48,14 @@ namespace Application
             //Initialise attributes
             m_id = id;
             m_genome = genome;
-            Test.Print("pre-interpret");
+            //Test.Print("pre-interpret");
             m_genes = interpretGenome();
 
             // Get fitness
             FitnessFunctions f = new FitnessFunctions();
-            Test.Print("between-fitness");
+            //Test.Print("between-fitness");
             m_fitness = f.getFitness(m_genes, env);
-            Test.Print("post-fitness");
+            //Test.Print("post-fitness");
 
             //Coordinates
             m_x = x;
@@ -118,16 +118,16 @@ namespace Application
             // Get list of genes using regular expressions
             Regex genesRegex = new Regex("A[BCD]{2,3}E");
             List<string> genes = new List<string>();
-            Test.Print(m_genome);
+            //Test.Print(m_genome);
             Match match = genesRegex.Match(m_genome);
             while (match.Success) {
-                Test.Print(match.Value);
+                //Test.Print(match.Value);
                 string gene = match.Value;
                 gene = gene.Substring(1, gene.Length - 2);
                 genes.Add(gene);
                 match = match.NextMatch();
             }
-            Test.Print("End while");
+            //Test.Print("End while");
             return genes;
         }
 
