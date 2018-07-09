@@ -67,6 +67,7 @@ namespace Application
             if(hexa != null)
             {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 NewHexa NHexa = hexa.GetComponent<NewHexa>();
                 if (NHexa.x > 0 && NHexa.x < 8 && NHexa.y > 0 && NHexa.y < 8)
                 {
@@ -85,7 +86,22 @@ namespace Application
 =======
                 Colision(hexa);
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+                //Colision(hexa);
+                GameObject newTerrain;
+                newTerrain = Instantiate(Terrain, hexa.transform.position, hexa.transform.rotation);
+                newTerrain.GetComponent<Hexagone>().Value = Value;
+                test.Card = null;
+                Destroy(gameObject);
+>>>>>>> parent of 0ce98fc... lands on grid with number
             }
+        }
+
+        public void Colision(GameObject col)
+        {
+            col.SendMessage("ChangeValue", Value);
+            test.Card = null;
+            Destroy(gameObject);
         }
     }
 }

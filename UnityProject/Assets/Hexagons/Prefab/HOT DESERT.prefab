@@ -480,11 +480,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   test: {fileID: 0}
   col: {fileID: 0}
-  parent: {fileID: 0}
-  x: 0
-  y: 0
-  posX: 1
-  posY: 1
 --- !u!114 &114115616430680244
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -498,11 +493,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   test: {fileID: 0}
   col: {fileID: 0}
-  parent: {fileID: 0}
-  x: 0
-  y: 0
-  posX: 1
-  posY: 0
 --- !u!114 &114333321649166566
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -516,11 +506,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   test: {fileID: 0}
   col: {fileID: 0}
-  parent: {fileID: 0}
-  x: 0
-  y: 0
-  posX: 0
-  posY: 1
 --- !u!114 &114524008818950494
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -534,11 +519,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   test: {fileID: 0}
   col: {fileID: 0}
-  parent: {fileID: 0}
-  x: 0
-  y: 0
-  posX: -1
-  posY: 0
 --- !u!114 &114613463059641714
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -559,8 +539,6 @@ MonoBehaviour:
   - {fileID: 0}
   info: {fileID: 0}
   test: {fileID: 0}
-  x: 1
-  y: 1
 --- !u!114 &114745625999085044
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -574,11 +552,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   test: {fileID: 0}
   col: {fileID: 0}
-  parent: {fileID: 0}
-  x: 0
-  y: 0
-  posX: 0
-  posY: -1
 --- !u!114 &114889106314419246
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -592,11 +565,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   test: {fileID: 0}
   col: {fileID: 0}
-  parent: {fileID: 0}
-  x: 0
-  y: 0
-  posX: -1
-  posY: -1
 --- !u!212 &212877102804420554
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -16,9 +16,6 @@ namespace Application
 
         public Test test;
 
-        public int x;
-        public int y;
-
         // Use this for initialization
         void Start()
         {
@@ -28,6 +25,7 @@ namespace Application
             text[1] = GameObject.Find("Nourriture").GetComponent<Text>();
             text[2] = GameObject.Find("Predator").GetComponent<Text>();
             info = GameObject.Find("Info");
+<<<<<<< HEAD
             test = GameObject.Find("Simulation").GetComponent<Test>();
 
             gameObject.GetComponent<SpriteRenderer>().sortingOrder = x + y;
@@ -36,6 +34,9 @@ namespace Application
 =======
 
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+            test = GameObject.Find("Simulation").GetComponent<Test>();         
+>>>>>>> parent of 0ce98fc... lands on grid with number
         }
 
         // Update is called once per frame

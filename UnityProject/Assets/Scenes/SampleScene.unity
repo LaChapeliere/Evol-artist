@@ -605,36 +605,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114121072711334652, guid: 3ff24f333c53ce4408ea7d3f80fdeb81,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114640767852671338, guid: 3ff24f333c53ce4408ea7d3f80fdeb81,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114591496931739366, guid: 3ff24f333c53ce4408ea7d3f80fdeb81,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114377131167222070, guid: 3ff24f333c53ce4408ea7d3f80fdeb81,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114811246369341820, guid: 3ff24f333c53ce4408ea7d3f80fdeb81,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114355770719622178, guid: 3ff24f333c53ce4408ea7d3f80fdeb81,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
     - target: {fileID: 114833911081876408, guid: 3ff24f333c53ce4408ea7d3f80fdeb81,
         type: 2}
       propertyPath: player
@@ -660,16 +630,36 @@ Prefab:
       propertyPath: test
       value: 
       objectReference: {fileID: 1199288395}
+    - target: {fileID: 114355770719622178, guid: 3ff24f333c53ce4408ea7d3f80fdeb81,
+        type: 2}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
+    - target: {fileID: 114811246369341820, guid: 3ff24f333c53ce4408ea7d3f80fdeb81,
+        type: 2}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
+    - target: {fileID: 114377131167222070, guid: 3ff24f333c53ce4408ea7d3f80fdeb81,
+        type: 2}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
+    - target: {fileID: 114591496931739366, guid: 3ff24f333c53ce4408ea7d3f80fdeb81,
+        type: 2}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
     - target: {fileID: 114640767852671338, guid: 3ff24f333c53ce4408ea7d3f80fdeb81,
         type: 2}
-      propertyPath: posY
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114640767852671338, guid: 3ff24f333c53ce4408ea7d3f80fdeb81,
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
+    - target: {fileID: 114121072711334652, guid: 3ff24f333c53ce4408ea7d3f80fdeb81,
         type: 2}
-      propertyPath: posX
-      value: -1
-      objectReference: {fileID: 0}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ff24f333c53ce4408ea7d3f80fdeb81, type: 2}
   m_IsPrefabParent: 0
@@ -4219,7 +4209,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
     m_FontSize: 16
+=======
+    m_FontSize: 40
+>>>>>>> parent of 0ce98fc... lands on grid with number
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -9162,6 +9156,36 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114892469991353762, guid: b54b789ad60746749a8f2ada16cf4915,
+        type: 2}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
+    - target: {fileID: 114523581682149054, guid: b54b789ad60746749a8f2ada16cf4915,
+        type: 2}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
+    - target: {fileID: 114868952309010764, guid: b54b789ad60746749a8f2ada16cf4915,
+        type: 2}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
+    - target: {fileID: 114688057743569812, guid: b54b789ad60746749a8f2ada16cf4915,
+        type: 2}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
+    - target: {fileID: 114670809796224932, guid: b54b789ad60746749a8f2ada16cf4915,
+        type: 2}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
+    - target: {fileID: 114373501741664960, guid: b54b789ad60746749a8f2ada16cf4915,
+        type: 2}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
     - target: {fileID: 114637310384992568, guid: b54b789ad60746749a8f2ada16cf4915,
         type: 2}
       propertyPath: player
@@ -9187,46 +9211,6 @@ Prefab:
       propertyPath: test
       value: 
       objectReference: {fileID: 1199288395}
-    - target: {fileID: 114373501741664960, guid: b54b789ad60746749a8f2ada16cf4915,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114670809796224932, guid: b54b789ad60746749a8f2ada16cf4915,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114688057743569812, guid: b54b789ad60746749a8f2ada16cf4915,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114868952309010764, guid: b54b789ad60746749a8f2ada16cf4915,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114523581682149054, guid: b54b789ad60746749a8f2ada16cf4915,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114892469991353762, guid: b54b789ad60746749a8f2ada16cf4915,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114523581682149054, guid: b54b789ad60746749a8f2ada16cf4915,
-        type: 2}
-      propertyPath: posY
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114523581682149054, guid: b54b789ad60746749a8f2ada16cf4915,
-        type: 2}
-      propertyPath: posX
-      value: -1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b54b789ad60746749a8f2ada16cf4915, type: 2}
   m_IsPrefabParent: 0
@@ -11260,7 +11244,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Font: {fileID: 12800000, guid: eae260c1b21e6fb4f8ea870c8c356f8c, type: 3}
+=======
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+>>>>>>> parent of 0ce98fc... lands on grid with number
     m_FontSize: 40
 =======
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -11679,36 +11667,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114159954222379350, guid: d3dae3c6f7a51ef41aad6de084e34f68,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114169996306958474, guid: d3dae3c6f7a51ef41aad6de084e34f68,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114255174039565112, guid: d3dae3c6f7a51ef41aad6de084e34f68,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114923257521325580, guid: d3dae3c6f7a51ef41aad6de084e34f68,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114656027635585592, guid: d3dae3c6f7a51ef41aad6de084e34f68,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114039389619958080, guid: d3dae3c6f7a51ef41aad6de084e34f68,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
     - target: {fileID: 114632348190855532, guid: d3dae3c6f7a51ef41aad6de084e34f68,
         type: 2}
       propertyPath: player
@@ -11734,16 +11692,36 @@ Prefab:
       propertyPath: test
       value: 
       objectReference: {fileID: 1199288395}
+    - target: {fileID: 114039389619958080, guid: d3dae3c6f7a51ef41aad6de084e34f68,
+        type: 2}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
+    - target: {fileID: 114656027635585592, guid: d3dae3c6f7a51ef41aad6de084e34f68,
+        type: 2}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
+    - target: {fileID: 114923257521325580, guid: d3dae3c6f7a51ef41aad6de084e34f68,
+        type: 2}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
+    - target: {fileID: 114255174039565112, guid: d3dae3c6f7a51ef41aad6de084e34f68,
+        type: 2}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
     - target: {fileID: 114169996306958474, guid: d3dae3c6f7a51ef41aad6de084e34f68,
         type: 2}
-      propertyPath: posY
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114169996306958474, guid: d3dae3c6f7a51ef41aad6de084e34f68,
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
+    - target: {fileID: 114159954222379350, guid: d3dae3c6f7a51ef41aad6de084e34f68,
         type: 2}
-      propertyPath: posX
-      value: -1
-      objectReference: {fileID: 0}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d3dae3c6f7a51ef41aad6de084e34f68, type: 2}
   m_IsPrefabParent: 0
@@ -12750,19 +12728,21 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 43f7946569f63fd4f90a29d34ea13ba8, type: 3}
-    m_FontSize: 50
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 5
-    m_MaxSize: 50
+    m_MinSize: 10
+    m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Start Simulation
+  m_Text: 'Start Simulation
+
+'
 --- !u!222 &546479409
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17853,6 +17833,11 @@ Prefab:
       propertyPath: test
       value: 
       objectReference: {fileID: 1199288395}
+    - target: {fileID: 212877102804420554, guid: 047e1d3bc94920a429a0c64e443eb937,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 047e1d3bc94920a429a0c64e443eb937, type: 2}
   m_IsPrefabParent: 0
@@ -17895,36 +17880,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 114429699121751518, guid: 634221a959fab424fb6a822b3005cd9b,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114823003818903974, guid: 634221a959fab424fb6a822b3005cd9b,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114135368773733358, guid: 634221a959fab424fb6a822b3005cd9b,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114750268026429884, guid: 634221a959fab424fb6a822b3005cd9b,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114482319998603918, guid: 634221a959fab424fb6a822b3005cd9b,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114343724280643290, guid: 634221a959fab424fb6a822b3005cd9b,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
     - target: {fileID: 114708008827112240, guid: 634221a959fab424fb6a822b3005cd9b,
         type: 2}
       propertyPath: player
@@ -17950,16 +17905,36 @@ Prefab:
       propertyPath: test
       value: 
       objectReference: {fileID: 1199288395}
+    - target: {fileID: 114343724280643290, guid: 634221a959fab424fb6a822b3005cd9b,
+        type: 2}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
+    - target: {fileID: 114482319998603918, guid: 634221a959fab424fb6a822b3005cd9b,
+        type: 2}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
+    - target: {fileID: 114750268026429884, guid: 634221a959fab424fb6a822b3005cd9b,
+        type: 2}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
+    - target: {fileID: 114135368773733358, guid: 634221a959fab424fb6a822b3005cd9b,
+        type: 2}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
     - target: {fileID: 114823003818903974, guid: 634221a959fab424fb6a822b3005cd9b,
         type: 2}
-      propertyPath: posY
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114823003818903974, guid: 634221a959fab424fb6a822b3005cd9b,
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
+    - target: {fileID: 114429699121751518, guid: 634221a959fab424fb6a822b3005cd9b,
         type: 2}
-      propertyPath: posX
-      value: -1
-      objectReference: {fileID: 0}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 634221a959fab424fb6a822b3005cd9b, type: 2}
   m_IsPrefabParent: 0
@@ -18237,10 +18212,13 @@ RectTransform:
   - {fileID: 1649364687}
 <<<<<<< HEAD
   - {fileID: 362490342}
+<<<<<<< HEAD
   - {fileID: 2140531616}
 =======
   - {fileID: 1583318828}
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+>>>>>>> parent of 0ce98fc... lands on grid with number
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22028,6 +22006,36 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114233070762452890, guid: b1ea9b19af72ecc47bcaa408efc27e90,
+        type: 2}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
+    - target: {fileID: 114916122381507412, guid: b1ea9b19af72ecc47bcaa408efc27e90,
+        type: 2}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
+    - target: {fileID: 114902495599837744, guid: b1ea9b19af72ecc47bcaa408efc27e90,
+        type: 2}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
+    - target: {fileID: 114878561881034528, guid: b1ea9b19af72ecc47bcaa408efc27e90,
+        type: 2}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
+    - target: {fileID: 114197274118112136, guid: b1ea9b19af72ecc47bcaa408efc27e90,
+        type: 2}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
+    - target: {fileID: 114129332518774224, guid: b1ea9b19af72ecc47bcaa408efc27e90,
+        type: 2}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1199288395}
     - target: {fileID: 114919913597735212, guid: b1ea9b19af72ecc47bcaa408efc27e90,
         type: 2}
       propertyPath: player
@@ -22053,46 +22061,6 @@ Prefab:
       propertyPath: test
       value: 
       objectReference: {fileID: 1199288395}
-    - target: {fileID: 114129332518774224, guid: b1ea9b19af72ecc47bcaa408efc27e90,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114197274118112136, guid: b1ea9b19af72ecc47bcaa408efc27e90,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114878561881034528, guid: b1ea9b19af72ecc47bcaa408efc27e90,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114902495599837744, guid: b1ea9b19af72ecc47bcaa408efc27e90,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114916122381507412, guid: b1ea9b19af72ecc47bcaa408efc27e90,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114233070762452890, guid: b1ea9b19af72ecc47bcaa408efc27e90,
-        type: 2}
-      propertyPath: test
-      value: 
-      objectReference: {fileID: 1199288395}
-    - target: {fileID: 114916122381507412, guid: b1ea9b19af72ecc47bcaa408efc27e90,
-        type: 2}
-      propertyPath: posY
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114916122381507412, guid: b1ea9b19af72ecc47bcaa408efc27e90,
-        type: 2}
-      propertyPath: posX
-      value: -1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1ea9b19af72ecc47bcaa408efc27e90, type: 2}
   m_IsPrefabParent: 0
@@ -27479,10 +27447,13 @@ MonoBehaviour:
   - {fileID: 1456712425149838, guid: e912cca6c19afd94f979ec54823a359f, type: 2}
   - {fileID: 1578482710357708, guid: a6e8e918ad24ccd43b0fe5b2a46e8cc8, type: 2}
   - {fileID: 1607751822863532, guid: 08235fab11845fd489816b06d733873c, type: 2}
+<<<<<<< HEAD
   Output: {fileID: 0}
 =======
   - {fileID: 1320753279816766, guid: 1d0022ec2466c9f45b7c4e0efc400c18, type: 2}
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+>>>>>>> parent of 0ce98fc... lands on grid with number
 --- !u!4 &1199288396
 Transform:
   m_ObjectHideFlags: 0
@@ -33321,12 +33292,16 @@ RectTransform:
 <<<<<<< HEAD
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
   m_LocalScale: {x: 1, y: 1, z: 1}
 =======
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 2.8385432, y: 2.8385427, z: 2.8385427}
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+  m_LocalScale: {x: 2.8385432, y: 2.8385432, z: 2.8385432}
+>>>>>>> parent of 0ce98fc... lands on grid with number
   m_Children:
   - {fileID: 546479407}
   m_Father: {fileID: 799407273}
@@ -33336,11 +33311,15 @@ RectTransform:
   m_AnchorMax: {x: 0.5, y: 0.5}
 <<<<<<< HEAD
   m_AnchoredPosition: {x: 39.999977, y: -368.00006}
+<<<<<<< HEAD
   m_SizeDelta: {x: 400, y: 100}
 =======
   m_AnchoredPosition: {x: 40, y: -368}
   m_SizeDelta: {x: 160, y: 30}
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+  m_SizeDelta: {x: 160, y: 30}
+>>>>>>> parent of 0ce98fc... lands on grid with number
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1440874738
 MonoBehaviour:
@@ -40620,7 +40599,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 50
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 38f18f0e974d1da45856b402798624b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -40658,6 +40637,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selection: {fileID: 429082295}
 <<<<<<< HEAD
+<<<<<<< HEAD
   hexagone: []
 =======
   hexagone:
@@ -40666,6 +40646,10 @@ MonoBehaviour:
   - {fileID: 2100626851}
   - {fileID: 1303323443}
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+  hexagone:
+  - {fileID: 1796338626}
+>>>>>>> parent of 0ce98fc... lands on grid with number
   test: {fileID: 1199288395}
   CaseActu: 0
   isClick: 0
@@ -43134,6 +43118,14 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+--- !u!1 &1796338626 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1655457910906852, guid: 634221a959fab424fb6a822b3005cd9b,
+    type: 2}
+  m_PrefabInternal: {fileID: 789746950}
+>>>>>>> parent of 0ce98fc... lands on grid with number
 --- !u!4 &1796338627 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4344782948879578, guid: 634221a959fab424fb6a822b3005cd9b,
@@ -50787,7 +50779,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Font: {fileID: 12800000, guid: eae260c1b21e6fb4f8ea870c8c356f8c, type: 3}
+=======
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+>>>>>>> parent of 0ce98fc... lands on grid with number
     m_FontSize: 40
 =======
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -51182,6 +51178,7 @@ MeshFilter:
 <<<<<<< HEAD
   m_GameObject: {fileID: 2139364204}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
 --- !u!1 &2140531615
 GameObject:
   m_ObjectHideFlags: 0
@@ -51261,3 +51258,5 @@ CanvasRenderer:
 =======
   m_GameObject: {fileID: 2014687035}
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+>>>>>>> parent of 0ce98fc... lands on grid with number

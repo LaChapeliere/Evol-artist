@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.Threading;
-using UnityEngine.UI;
 
 namespace Application
 {
@@ -32,17 +31,18 @@ namespace Application
         private int Percent;
         private bool IsPlaying = false;
 
-        public Text Output;
-
         // Use this for initialization
         void Start()
         {
 <<<<<<< HEAD
             //info.SetActive(false);
+<<<<<<< HEAD
             Output = GameObject.Find("Output").GetComponent<Text>();
 =======
             info.SetActive(false);
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+>>>>>>> parent of 0ce98fc... lands on grid with number
         }
 
        void TestFunction()
@@ -92,7 +92,7 @@ namespace Application
         // Update is called once per frame
         void Update()
         {
-            Output.text = Percent.ToString();
+
         }
 
         public static void Print(string message)
