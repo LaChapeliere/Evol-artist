@@ -26,6 +26,9 @@ MonoBehaviour:
   m_RootView: {fileID: 2}
   m_MinSize: {x: 950, y: 300}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of e4663e3... Beta 1.1.0
+=======
 >>>>>>> parent of e4663e3... Beta 1.1.0
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
@@ -139,6 +142,9 @@ MonoBehaviour:
   vertical: 0
   controlID: 84
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of e4663e3... Beta 1.1.0
+=======
 >>>>>>> parent of e4663e3... Beta 1.1.0
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
@@ -177,6 +183,9 @@ MonoBehaviour:
   vertical: 1
   controlID: 85
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of e4663e3... Beta 1.1.0
+=======
 >>>>>>> parent of e4663e3... Beta 1.1.0
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
@@ -261,9 +270,15 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 0
     width: 932
+=======
+    x: 911
+    y: 0
+    width: 234
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
     x: 911
     y: 0
@@ -280,9 +295,12 @@ MonoBehaviour:
   vertical: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 47
 --- !u!114 &9
 =======
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
   controlID: 107
@@ -305,6 +323,7 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 288
     height: 419
   m_MinSize: {x: 200, y: 200}
@@ -313,6 +332,10 @@ MonoBehaviour:
 =======
     width: 234
     height: 419
+=======
+    width: 234
+    height: 419
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
     width: 234
     height: 419
@@ -376,12 +399,15 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 0
     width: 932
     height: 375
   m_MinSize: {x: 202, y: 221}
 =======
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
     x: 1145
@@ -440,6 +466,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+  m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animation
+    m_Image: {fileID: 1561878555887300916, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 410
+    width: 930
+    height: 392
+  m_PersistentViewDataDictionary: {fileID: 0}
+  m_AnimEditor: {fileID: 0}
+  m_LockTracker:
+    m_IsLocked: 0
+  m_LastSelectedObjectID: 24146
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
   m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
 >>>>>>> parent of e4663e3... Beta 1.1.0
   m_Name: 
@@ -455,6 +510,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 410
+<<<<<<< HEAD
 <<<<<<< HEAD
     width: 930
     height: 392
@@ -496,6 +552,11 @@ MonoBehaviour:
     width: 909
     height: 392
   m_PersistentViewDataDictionary: {fileID: 0}
+=======
+    width: 909
+    height: 392
+  m_PersistentViewDataDictionary: {fileID: 0}
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
     width: 909
     height: 392
@@ -632,6 +693,9 @@ MonoBehaviour:
   m_ViewIsLockedToObject: 0
 --- !u!114 &16
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of e4663e3... Beta 1.1.0
+=======
 >>>>>>> parent of e4663e3... Beta 1.1.0
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
@@ -659,12 +723,17 @@ MonoBehaviour:
     width: 930
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 354
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &14
 =======
     height: 297
   m_PersistentViewDataDictionary: {fileID: 0}
+=======
+    height: 297
+  m_PersistentViewDataDictionary: {fileID: 0}
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
     height: 297
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -692,9 +761,15 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 934
     y: 92
     width: 284
+=======
+    x: 913
+    y: 92
+    width: 230
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
     x: 913
     y: 92
@@ -711,9 +786,15 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: 202c0000
     m_LastClickedID: 11296
     m_ExpandedIDs: 00acffff40fbffff00000000
+=======
+    m_SelectedIDs: 96010000
+    m_LastClickedID: 0
+    m_ExpandedIDs: e2fbffff00000000
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
     m_SelectedIDs: 96010000
     m_LastClickedID: 0
@@ -803,9 +884,15 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 934
     y: 511
     width: 284
+=======
+    x: 913
+    y: 511
+    width: 230
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
     x: 913
     y: 511
@@ -832,11 +919,19 @@ MonoBehaviour:
     m_Folders:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/Scripts
+=======
+    - Assets/Scenes/SampleScene_Profiles
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Scenes/SampleScene_Profiles
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
     - Assets/Scenes/SampleScene_Profiles
   m_ViewMode: 1
@@ -859,9 +954,15 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: c22b0000
     m_LastClickedID: 11202
     m_ExpandedIDs: 000000009629000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: f00a0000
+    m_LastClickedID: 2800
+    m_ExpandedIDs: 00000000e20900002e0a00002a0e000000ca9a3bffffff7f
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
     m_SelectedIDs: f00a0000
     m_LastClickedID: 2800
@@ -901,7 +1002,11 @@ MonoBehaviour:
     m_LastClickedID: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000096290000
+=======
+    m_ExpandedIDs: 00000000e20900002e0a00002a0e0000
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
     m_ExpandedIDs: 00000000e20900002e0a00002a0e0000
 >>>>>>> parent of e4663e3... Beta 1.1.0
@@ -961,7 +1066,11 @@ MonoBehaviour:
     m_NewAssetIndexInList: -1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ScrollPosition: {x: 0, y: 52}
+=======
+    m_ScrollPosition: {x: 0, y: 0}
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
     m_ScrollPosition: {x: 0, y: 0}
 >>>>>>> parent of e4663e3... Beta 1.1.0
@@ -1067,6 +1176,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 92
     width: 930
@@ -1074,6 +1184,10 @@ MonoBehaviour:
 =======
     x: 1147
     y: 92
+=======
+    x: 1147
+    y: 92
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
     x: 1147
     y: 92
