@@ -50,20 +50,22 @@ namespace Application
             transform.position = new Vector3(-0.3f, -6, 2.75f);
             if(hexa != null)
             {
-                //Colision(hexa);
-                GameObject newTerrain;
-                newTerrain = Instantiate(Terrain, hexa.transform.position, hexa.transform.rotation);
-                newTerrain.GetComponent<Hexagone>().Value = Value;
-                test.Card = null;
-                Destroy(gameObject);
+                NewHexa NHexa = hexa.GetComponent<NewHexa>();
+                if (NHexa.x > 0 && NHexa.x < 8 && NHexa.y > 0 && NHexa.y < 8)
+                {
+                    if ((NHexa.x != 1 || NHexa.y != 5) && (NHexa.x != 2 || NHexa.y != 6) && (NHexa.x != 3 || NHexa.y != 7)) {
+                        if ((NHexa.y != 1 || NHexa.x != 5) && (NHexa.y != 2 || NHexa.x != 6) && (NHexa.y != 3 || NHexa.x != 7)) {
+                            GameObject newTerrain;
+                            newTerrain = Instantiate(Terrain, hexa.transform.position, hexa.transform.rotation);
+                            newTerrain.GetComponent<Hexagone>().Value = Value;
+                            newTerrain.GetComponent<Hexagone>().x = NHexa.x;
+                            newTerrain.GetComponent<Hexagone>().y = NHexa.y;
+                            test.Card = null;
+                            Destroy(gameObject);
+                        }
+                    }
+                }
             }
-        }
-
-        public void Colision(GameObject col)
-        {
-            col.SendMessage("ChangeValue", Value);
-            test.Card = null;
-            Destroy(gameObject);
         }
     }
 }

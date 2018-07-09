@@ -16,6 +16,9 @@ namespace Application
 
         public Test test;
 
+        public int x;
+        public int y;
+
         // Use this for initialization
         void Start()
         {
@@ -24,7 +27,11 @@ namespace Application
             text[1] = GameObject.Find("Nourriture").GetComponent<Text>();
             text[2] = GameObject.Find("Predator").GetComponent<Text>();
             info = GameObject.Find("Info");
-            test = GameObject.Find("Simulation").GetComponent<Test>();         
+            test = GameObject.Find("Simulation").GetComponent<Test>();
+
+            gameObject.GetComponent<SpriteRenderer>().sortingOrder = x + y;
+
+            player.hexagone.Add(gameObject);
         }
 
         // Update is called once per frame

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.Threading;
+using UnityEngine.UI;
 
 namespace Application
 {
@@ -31,10 +32,13 @@ namespace Application
         private int Percent;
         private bool IsPlaying = false;
 
+        public Text Output;
+
         // Use this for initialization
         void Start()
         {
             //info.SetActive(false);
+            Output = GameObject.Find("Output").GetComponent<Text>();
         }
 
        void TestFunction()
@@ -84,7 +88,7 @@ namespace Application
         // Update is called once per frame
         void Update()
         {
-
+            Output.text = Percent.ToString();
         }
 
         public static void Print(string message)
