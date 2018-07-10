@@ -9,11 +9,6 @@ namespace Application
 
         public Test test;
         public Collider2D col;
-        public Hexagone parent;
-        public int x;
-        public int y;
-        public int posX;
-        public int posY;
 
         // Use this for initialization
         void Start()
@@ -21,9 +16,6 @@ namespace Application
             test = GameObject.Find("Simulation").GetComponent<Test>();
             col = gameObject.GetComponent<Collider2D>();
             col.enabled = false;
-            parent = gameObject.GetComponentInParent<Hexagone>();
-            x = parent.x + posX;
-            y = parent.y + posY;
         }
 
         // Update is called once per frame

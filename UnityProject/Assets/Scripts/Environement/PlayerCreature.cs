@@ -7,7 +7,7 @@ namespace Application
     public class PlayerCreature : MonoBehaviour
     {
         public GameObject selection;
-        public List<GameObject> hexagone;
+        public GameObject[] hexagone;
         public Test test;
         public int CaseActu = 0;
         public bool isClick = false;
@@ -45,22 +45,19 @@ namespace Application
         {
             if (Deplacement > 0)
             {
+                transform.position = destination.transform.position;
                 isClick = false;
                 selection.SetActive(false);
                 int i = 0;
-                while (destination != hexagone[i] && i < 38)
+                while (destination != hexagone[i])
                 {
                     i++;
                 }
-                Hexagone NewHexa = hexagone[i].GetComponent<Hexagone>();
-                Hexagone hexa = hexagone[CaseActu].GetComponent<Hexagone>();
-                if ((NewHexa.x <= hexa.x + 1 || NewHexa.x >= hexa.x - 1) && (NewHexa.y <= hexa.y + 1 || NewHexa.y >= hexa.y - 1)) {
-                    transform.position = destination.transform.position;
-                    hexa.Creature = false;
-                    CaseActu = i;
-                    NewHexa.Creature = true;
-                    Deplacement--;
-                }
+                hexagone[CaseActu].GetComponent<Hexagone>().Creature = false;
+                CaseActu = i;
+                hexagone[CaseActu].GetComponent<Hexagone>().Creature = true;
+                Deplacement--;
+                Deplacement--;
             }
         }
     }

@@ -94,9 +94,26 @@ namespace Application
                 Colision(hexa);
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
 =======
+<<<<<<< HEAD
                 Colision(hexa);
 >>>>>>> parent of e4663e3... Beta 1.1.0
+=======
+                //Colision(hexa);
+                GameObject newTerrain;
+                newTerrain = Instantiate(Terrain, hexa.transform.position, hexa.transform.rotation);
+                newTerrain.GetComponent<Hexagone>().Value = Value;
+                test.Card = null;
+                Destroy(gameObject);
+>>>>>>> parent of 0ce98fc... lands on grid with number
+>>>>>>> 7920fa99a6449bacb124030e6a3f6c9b72926822
             }
+        }
+
+        public void Colision(GameObject col)
+        {
+            col.SendMessage("ChangeValue", Value);
+            test.Card = null;
+            Destroy(gameObject);
         }
     }
 }
