@@ -28,6 +28,9 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of e4663e3... Beta 1.1.0
+=======
 >>>>>>> parent of e4663e3... Beta 1.1.0
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
@@ -145,6 +148,7 @@ MonoBehaviour:
   vertical: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 305
 =======
   controlID: 84
@@ -164,6 +168,9 @@ MonoBehaviour:
   controlID: 4456
 >>>>>>> parent of 0ce98fc... lands on grid with number
 >>>>>>> 7920fa99a6449bacb124030e6a3f6c9b72926822
+=======
+  controlID: 84
+>>>>>>> parent of e4663e3... Beta 1.1.0
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -194,14 +201,19 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 992
 =======
     width: 864
 >>>>>>> parent of 0ce98fc... lands on grid with number
+=======
+    width: 911
+>>>>>>> parent of e4663e3... Beta 1.1.0
     height: 731
-  m_MinSize: {x: 202, y: 421}
-  m_MaxSize: {x: 4002, y: 8021}
+  m_MinSize: {x: 202, y: 442}
+  m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
   controlID: 278
 =======
@@ -232,6 +244,9 @@ MonoBehaviour:
   controlID: 4481
 >>>>>>> parent of 0ce98fc... lands on grid with number
 >>>>>>> 7920fa99a6449bacb124030e6a3f6c9b72926822
+=======
+  controlID: 85
+>>>>>>> parent of e4663e3... Beta 1.1.0
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -257,6 +272,7 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 992
     height: 298
   m_MinSize: {x: 102, y: 121}
@@ -269,18 +285,24 @@ MonoBehaviour:
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
 =======
     width: 864
+=======
+    width: 911
+>>>>>>> parent of e4663e3... Beta 1.1.0
     height: 318
   m_MinSize: {x: 202, y: 221}
 >>>>>>> parent of 0ce98fc... lands on grid with number
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_Selected: 1
   m_LastSelected: 0
 =======
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
   - {fileID: 16}
@@ -321,7 +343,7 @@ MonoBehaviour:
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
 =======
     y: 318
-    width: 864
+    width: 911
     height: 413
 >>>>>>> parent of 0ce98fc... lands on grid with number
   m_MinSize: {x: 202, y: 221}
@@ -349,6 +371,7 @@ MonoBehaviour:
   - {fileID: 12}
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     x: 992
@@ -389,10 +412,16 @@ MonoBehaviour:
     width: 389
 >>>>>>> parent of 0ce98fc... lands on grid with number
 >>>>>>> 7920fa99a6449bacb124030e6a3f6c9b72926822
+=======
+    x: 911
+    y: 0
+    width: 234
+>>>>>>> parent of e4663e3... Beta 1.1.0
     height: 731
   m_MinSize: {x: 202, y: 421}
   m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   controlID: 253
@@ -417,6 +446,9 @@ MonoBehaviour:
   controlID: 4457
 >>>>>>> parent of 0ce98fc... lands on grid with number
 >>>>>>> 7920fa99a6449bacb124030e6a3f6c9b72926822
+=======
+  controlID: 107
+>>>>>>> parent of e4663e3... Beta 1.1.0
 --- !u!114 &10
 >>>>>>> parent of e4663e3... Beta 1.1.0
 MonoBehaviour:
@@ -434,6 +466,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     width: 264
@@ -467,6 +500,12 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+    width: 234
+    height: 419
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
     width: 234
     height: 419
@@ -515,7 +554,7 @@ MonoBehaviour:
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
 =======
     y: 419
-    width: 389
+    width: 234
     height: 312
 >>>>>>> parent of 0ce98fc... lands on grid with number
   m_MinSize: {x: 234, y: 271}
@@ -540,6 +579,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     x: 1256
@@ -575,6 +615,11 @@ MonoBehaviour:
     width: 283
 >>>>>>> parent of 0ce98fc... lands on grid with number
 >>>>>>> 7920fa99a6449bacb124030e6a3f6c9b72926822
+=======
+    x: 1145
+    y: 0
+    width: 391
+>>>>>>> parent of e4663e3... Beta 1.1.0
     height: 731
   m_MinSize: {x: 277, y: 71}
 >>>>>>> parent of e4663e3... Beta 1.1.0
@@ -599,6 +644,35 @@ MonoBehaviour:
 =======
   m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
 =======
+  m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animation
+    m_Image: {fileID: 1561878555887300916, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 410
+    width: 930
+    height: 392
+  m_PersistentViewDataDictionary: {fileID: 0}
+  m_AnimEditor: {fileID: 0}
+  m_LockTracker:
+    m_IsLocked: 0
+  m_LastSelectedObjectID: 24146
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
   m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -752,7 +826,7 @@ MonoBehaviour:
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
 =======
     y: 410
-    width: 862
+    width: 909
     height: 392
 >>>>>>> parent of 0ce98fc... lands on grid with number
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -770,6 +844,9 @@ MonoBehaviour:
     width: 909
     height: 392
   m_PersistentViewDataDictionary: {fileID: 0}
+<<<<<<< HEAD
+>>>>>>> parent of e4663e3... Beta 1.1.0
+=======
 >>>>>>> parent of e4663e3... Beta 1.1.0
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
@@ -801,6 +878,7 @@ MonoBehaviour:
       y: 17
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       width: 990
       height: 395
     m_Scale: {x: 1.0609, y: 1.0609}
@@ -824,12 +902,19 @@ MonoBehaviour:
     m_Translation: {x: 431, y: 187.5}
 >>>>>>> parent of 0ce98fc... lands on grid with number
 >>>>>>> 7920fa99a6449bacb124030e6a3f6c9b72926822
+=======
+      width: 909
+      height: 375
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 454.5, y: 187.5}
+>>>>>>> parent of e4663e3... Beta 1.1.0
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       x: -466.585
@@ -846,14 +931,18 @@ MonoBehaviour:
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
 =======
       x: -431
+=======
+      x: -454.5
+>>>>>>> parent of e4663e3... Beta 1.1.0
       y: -187.5
-      width: 862
+      width: 909
       height: 375
 >>>>>>> parent of 0ce98fc... lands on grid with number
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_LastWindowPixelSize: {x: 990, y: 412}
@@ -868,6 +957,9 @@ MonoBehaviour:
   m_LastWindowPixelSize: {x: 862, y: 392}
 >>>>>>> parent of 0ce98fc... lands on grid with number
 >>>>>>> 7920fa99a6449bacb124030e6a3f6c9b72926822
+=======
+  m_LastWindowPixelSize: {x: 909, y: 392}
+>>>>>>> parent of e4663e3... Beta 1.1.0
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -895,6 +987,7 @@ MonoBehaviour:
     y: 92
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 990
     height: 284
 =======
@@ -905,6 +998,9 @@ MonoBehaviour:
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
 =======
     width: 862
+=======
+    width: 909
+>>>>>>> parent of e4663e3... Beta 1.1.0
     height: 297
 >>>>>>> parent of 0ce98fc... lands on grid with number
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -914,6 +1010,7 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     m_Target: {x: 0.5400009, y: -1.7215763, z: 6.904564}
@@ -936,6 +1033,11 @@ MonoBehaviour:
     m_Value: {x: 5.738384, y: 0.5873589, z: 5.554315}
 >>>>>>> parent of 0ce98fc... lands on grid with number
 >>>>>>> 7920fa99a6449bacb124030e6a3f6c9b72926822
+=======
+    m_Target: {x: -5.2705617, y: -1.749253, z: -0.59765625}
+    speed: 2
+    m_Value: {x: -5.2705617, y: -1.749253, z: -0.59765625}
+>>>>>>> parent of e4663e3... Beta 1.1.0
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -969,6 +1071,7 @@ MonoBehaviour:
   m_Size:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 5.43222
     speed: 2
     m_Value: 5.43222
@@ -989,6 +1092,11 @@ MonoBehaviour:
     m_Value: 9.484887
 >>>>>>> parent of 0ce98fc... lands on grid with number
 >>>>>>> 7920fa99a6449bacb124030e6a3f6c9b72926822
+=======
+    m_Target: 27.82566
+    speed: 2
+    m_Value: 27.82566
+>>>>>>> parent of e4663e3... Beta 1.1.0
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1004,6 +1112,7 @@ MonoBehaviour:
   m_ViewIsLockedToObject: 1
 =======
   m_ViewIsLockedToObject: 0
+<<<<<<< HEAD
 >>>>>>> parent of 0ce98fc... lands on grid with number
 --- !u!114 &15
 =======
@@ -1019,6 +1128,9 @@ MonoBehaviour:
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
 =======
   m_ViewIsLockedToObject: 0
+--- !u!114 &16
+>>>>>>> parent of e4663e3... Beta 1.1.0
+=======
 --- !u!114 &16
 >>>>>>> parent of e4663e3... Beta 1.1.0
 MonoBehaviour:
@@ -1044,13 +1156,18 @@ MonoBehaviour:
     y: 92
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 990
     height: 277
 =======
     width: 905
+=======
+    width: 930
+>>>>>>> parent of e4663e3... Beta 1.1.0
     height: 297
 >>>>>>> parent of 0ce98fc... lands on grid with number
   m_PersistentViewDataDictionary: {fileID: 0}
+<<<<<<< HEAD
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1111,6 +1228,8 @@ MonoBehaviour:
   m_LastSelectedObjectID: 9004
 >>>>>>> parent of 0ce98fc... lands on grid with number
 >>>>>>> 7920fa99a6449bacb124030e6a3f6c9b72926822
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
 --- !u!114 &17
 >>>>>>> parent of e4663e3... Beta 1.1.0
 MonoBehaviour:
@@ -1134,16 +1253,21 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 994
 =======
     x: 866
 >>>>>>> parent of 0ce98fc... lands on grid with number
+=======
+    x: 913
+>>>>>>> parent of e4663e3... Beta 1.1.0
     y: 92
-    width: 385
+    width: 230
     height: 398
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_SelectedIDs: 
     m_LastClickedID: 0
@@ -1214,6 +1338,11 @@ MonoBehaviour:
     m_ExpandedIDs: defbffff00000000
 >>>>>>> parent of 0ce98fc... lands on grid with number
 >>>>>>> 7920fa99a6449bacb124030e6a3f6c9b72926822
+=======
+    m_SelectedIDs: 96010000
+    m_LastClickedID: 0
+    m_ExpandedIDs: e2fbffff00000000
+>>>>>>> parent of e4663e3... Beta 1.1.0
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1293,6 +1422,7 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 994
     y: 513
     width: 260
@@ -1328,8 +1458,11 @@ MonoBehaviour:
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
 =======
     x: 866
+=======
+    x: 913
+>>>>>>> parent of e4663e3... Beta 1.1.0
     y: 511
-    width: 385
+    width: 230
     height: 291
 >>>>>>> parent of 0ce98fc... lands on grid with number
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -1345,6 +1478,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     - Assets/Scripts/Environement
@@ -1395,6 +1529,13 @@ MonoBehaviour:
 >>>>>>> parent of e4663e3... Beta 1.1.0
 =======
   - Assets/Environement
+=======
+    - Assets/Scenes/SampleScene_Profiles
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Scenes/SampleScene_Profiles
+>>>>>>> parent of e4663e3... Beta 1.1.0
   m_LastFoldersGridSize: -1
 >>>>>>> parent of 0ce98fc... lands on grid with number
 >>>>>>> 7920fa99a6449bacb124030e6a3f6c9b72926822
@@ -1409,6 +1550,7 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     m_SelectedIDs: f20c0000
@@ -1449,6 +1591,11 @@ MonoBehaviour:
     m_ExpandedIDs: 00000000da090000260a0000220e000000ca9a3bffffff7f
 >>>>>>> parent of 0ce98fc... lands on grid with number
 >>>>>>> 7920fa99a6449bacb124030e6a3f6c9b72926822
+=======
+    m_SelectedIDs: f00a0000
+    m_LastClickedID: 2800
+    m_ExpandedIDs: 00000000e20900002e0a00002a0e000000ca9a3bffffff7f
+>>>>>>> parent of e4663e3... Beta 1.1.0
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1478,6 +1625,7 @@ MonoBehaviour:
     m_LastClickedID: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000dc090000240a0000d60b0000440d00007e0e000000ca9a3bffffff7f
 =======
 <<<<<<< HEAD
@@ -1502,6 +1650,9 @@ MonoBehaviour:
     m_ExpandedIDs: 00000000da090000260a0000220e000000ca9a3bffffff7f
 >>>>>>> parent of 0ce98fc... lands on grid with number
 >>>>>>> 7920fa99a6449bacb124030e6a3f6c9b72926822
+=======
+    m_ExpandedIDs: 00000000e20900002e0a00002a0e0000
+>>>>>>> parent of e4663e3... Beta 1.1.0
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1564,11 +1715,15 @@ MonoBehaviour:
     m_NewAssetIndexInList: -1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 57
   m_DirectoriesAreaWidth: 124
 =======
     m_ScrollPosition: {x: 0, y: 139}
+=======
+    m_ScrollPosition: {x: 0, y: 0}
+>>>>>>> parent of e4663e3... Beta 1.1.0
     m_GridSize: 64
   m_DirectoriesAreaWidth: 110
 >>>>>>> parent of 0ce98fc... lands on grid with number
@@ -1692,6 +1847,7 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1258
     y: 92
     width: 278
@@ -1727,6 +1883,11 @@ MonoBehaviour:
     width: 281
 >>>>>>> parent of 0ce98fc... lands on grid with number
 >>>>>>> 7920fa99a6449bacb124030e6a3f6c9b72926822
+=======
+    x: 1147
+    y: 92
+    width: 389
+>>>>>>> parent of e4663e3... Beta 1.1.0
     height: 710
 >>>>>>> parent of e4663e3... Beta 1.1.0
   m_PersistentViewDataDictionary: {fileID: 0}

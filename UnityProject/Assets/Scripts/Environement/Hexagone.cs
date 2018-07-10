@@ -21,6 +21,7 @@ namespace Application
         {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             player = GameObject.Find("cat").GetComponent<PlayerCreature>();
             text[0] = GameObject.Find("Humidity").GetComponent<Text>();
             text[1] = GameObject.Find("Nourriture").GetComponent<Text>();
@@ -43,6 +44,9 @@ namespace Application
             test = GameObject.Find("Simulation").GetComponent<Test>();         
 >>>>>>> parent of 0ce98fc... lands on grid with number
 >>>>>>> 7920fa99a6449bacb124030e6a3f6c9b72926822
+=======
+
+>>>>>>> parent of e4663e3... Beta 1.1.0
         }
 
         // Update is called once per frame

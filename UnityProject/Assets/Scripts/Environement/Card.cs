@@ -30,10 +30,17 @@ namespace Application
                 Event e = Event.current;
                 Vector2 mousePos = new Vector2();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
                 mousePos.x = Input.mousePosition.x;
                 mousePos.y = c.pixelHeight - Input.mousePosition.y;
 
+=======
+
+                mousePos.x = Input.mousePosition.x;
+                mousePos.y = c.pixelHeight - Input.mousePosition.y;
+
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
 
                 mousePos.x = Input.mousePosition.x;
@@ -75,6 +82,7 @@ namespace Application
             {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 NewHexa NHexa = hexa.GetComponent<NewHexa>();
                 if (NHexa.x > 0 && NHexa.x < 8 && NHexa.y > 0 && NHexa.y < 8)
                 {
@@ -106,6 +114,9 @@ namespace Application
                 Destroy(gameObject);
 >>>>>>> parent of 0ce98fc... lands on grid with number
 >>>>>>> 7920fa99a6449bacb124030e6a3f6c9b72926822
+=======
+                Colision(hexa);
+>>>>>>> parent of e4663e3... Beta 1.1.0
             }
         }
 

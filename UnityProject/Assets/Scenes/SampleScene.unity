@@ -567,6 +567,7 @@ MeshFilter:
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &36416886
 Prefab:
   m_ObjectHideFlags: 0
@@ -666,6 +667,8 @@ Prefab:
   m_IsPrefabParent: 0
 =======
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
 --- !u!1 &39203313
@@ -4393,12 +4396,17 @@ MonoBehaviour:
   m_FontData:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Font: {fileID: 12800000, guid: eae260c1b21e6fb4f8ea870c8c356f8c, type: 3}
     m_FontSize: 40
 =======
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 16
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 16
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 16
@@ -4523,6 +4531,9 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
 =======
@@ -4555,6 +4566,9 @@ Transform:
   m_Children: []
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of e4663e3... Beta 1.1.0
+=======
 >>>>>>> parent of e4663e3... Beta 1.1.0
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
@@ -9132,6 +9146,7 @@ MeshFilter:
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &419585689
 Prefab:
   m_ObjectHideFlags: 0
@@ -9231,6 +9246,8 @@ Prefab:
   m_IsPrefabParent: 0
 =======
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
 --- !u!1 &424503578
@@ -11265,6 +11282,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: eae260c1b21e6fb4f8ea870c8c356f8c, type: 3}
 =======
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
 >>>>>>> parent of 0ce98fc... lands on grid with number
     m_FontSize: 40
 =======
@@ -11273,6 +11291,9 @@ MonoBehaviour:
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
 =======
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 16
+>>>>>>> parent of e4663e3... Beta 1.1.0
+=======
     m_FontSize: 16
 >>>>>>> parent of e4663e3... Beta 1.1.0
     m_FontStyle: 0
@@ -11650,6 +11671,7 @@ MeshFilter:
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &513647124
 Prefab:
   m_ObjectHideFlags: 0
@@ -11749,6 +11771,8 @@ Prefab:
   m_IsPrefabParent: 0
 =======
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
 --- !u!1 &518309588
@@ -17764,6 +17788,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &788154747
 Prefab:
   m_ObjectHideFlags: 0
@@ -17965,6 +17990,8 @@ Prefab:
   m_IsPrefabParent: 0
 =======
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
 --- !u!1 &793065463
@@ -18239,6 +18266,7 @@ RectTransform:
   - {fileID: 1649364687}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 362490342}
 <<<<<<< HEAD
   - {fileID: 2140531616}
@@ -18252,6 +18280,9 @@ RectTransform:
 =======
 >>>>>>> parent of 0ce98fc... lands on grid with number
 >>>>>>> 7920fa99a6449bacb124030e6a3f6c9b72926822
+=======
+  - {fileID: 1583318828}
+>>>>>>> parent of e4663e3... Beta 1.1.0
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22001,6 +22032,7 @@ MeshFilter:
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &959100400
 Prefab:
   m_ObjectHideFlags: 0
@@ -22100,6 +22132,8 @@ Prefab:
   m_IsPrefabParent: 0
 =======
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
 --- !u!1 &961037005
@@ -27478,6 +27512,7 @@ MonoBehaviour:
   card:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 1646537570524432, guid: 0ed7ee5550707a242bb56c85f03869a6, type: 2}
   - {fileID: 1090390616369184, guid: a46a76f72cf4ce744bd57a800f02f06e, type: 2}
   - {fileID: 1242121791904488, guid: 16b01e5e64eb3f94fa159084e4a97bd9, type: 2}
@@ -27496,6 +27531,9 @@ MonoBehaviour:
 =======
 >>>>>>> parent of 0ce98fc... lands on grid with number
 >>>>>>> 7920fa99a6449bacb124030e6a3f6c9b72926822
+=======
+  - {fileID: 1320753279816766, guid: 1d0022ec2466c9f45b7c4e0efc400c18, type: 2}
+>>>>>>> parent of e4663e3... Beta 1.1.0
 --- !u!4 &1199288396
 Transform:
   m_ObjectHideFlags: 0
@@ -30102,6 +30140,7 @@ MeshFilter:
     type: 2}
   m_PrefabInternal: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 1288519607}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1299353682
@@ -30188,6 +30227,17 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+=======
+  m_GameObject: {fileID: 1302213399}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1303323443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+>>>>>>> parent of e4663e3... Beta 1.1.0
   - component: {fileID: 1303323448}
   - component: {fileID: 1303323447}
   - component: {fileID: 1303323446}
@@ -30199,6 +30249,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_IsActive: 0
 --- !u!4 &1301132876
@@ -30218,10 +30269,15 @@ Transform:
 --- !u!65 &1301132877
 BoxCollider:
 =======
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
   m_IsActive: 1
 --- !u!50 &1303323444
 Rigidbody2D:
   serializedVersion: 4
+<<<<<<< HEAD
+>>>>>>> parent of e4663e3... Beta 1.1.0
+=======
 >>>>>>> parent of e4663e3... Beta 1.1.0
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -30242,6 +30298,7 @@ Rigidbody2D:
   m_Constraints: 0
 --- !u!60 &1303323445
 PolygonCollider2D:
+<<<<<<< HEAD
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -30295,11 +30352,14 @@ MonoBehaviour:
   test: {fileID: 1199288395}
 --- !u!212 &1303323447
 SpriteRenderer:
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1303323443}
   m_Enabled: 1
+<<<<<<< HEAD
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -30387,10 +30447,41 @@ Rigidbody2D:
   m_Constraints: 0
 --- !u!60 &1303323445
 PolygonCollider2D:
+=======
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.66, y: 1.24}
+    newSize: {x: 1.76, y: 1.43}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.7381892, y: -0.10335853}
+      - {x: 0.4520949, y: 0.3391859}
+      - {x: -0.44854403, y: 0.36900386}
+      - {x: -0.7205839, y: -0.08751857}
+      - {x: -0.31407607, y: -0.5530583}
+      - {x: 0.370364, y: -0.55900395}
+    - - {x: -0.39999998, y: -0.275}
+      - {x: -0.35, y: -0.305}
+      - {x: -0.35, y: -0.295}
+--- !u!114 &1303323446
+MonoBehaviour:
+>>>>>>> parent of e4663e3... Beta 1.1.0
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1303323443}
+<<<<<<< HEAD
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -30424,6 +30515,8 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1303323443}
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7714a26d964a3fc439ea0818a09c65e5, type: 3}
@@ -30488,6 +30581,9 @@ Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
   m_GameObject: {fileID: 1303323443}
@@ -33578,6 +33674,7 @@ RectTransform:
   m_GameObject: {fileID: 1440874736}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
@@ -33597,6 +33694,11 @@ RectTransform:
   m_LocalScale: {x: 2.8385432, y: 2.8385432, z: 2.8385432}
 >>>>>>> parent of 0ce98fc... lands on grid with number
 >>>>>>> 7920fa99a6449bacb124030e6a3f6c9b72926822
+=======
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 2.8385432, y: 2.8385427, z: 2.8385427}
+>>>>>>> parent of e4663e3... Beta 1.1.0
   m_Children:
   - {fileID: 546479407}
   m_Father: {fileID: 799407273}
@@ -33606,10 +33708,13 @@ RectTransform:
   m_AnchorMax: {x: 0.5, y: 0.5}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 39.999977, y: -368.00006}
 <<<<<<< HEAD
   m_SizeDelta: {x: 400, y: 100}
 =======
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
   m_AnchoredPosition: {x: 40, y: -368}
@@ -35675,6 +35780,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 33483116668255862, guid: dd838d9d3469fab43a56a52b5c6014fa,
     type: 2}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1497882016}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1498011012
@@ -35945,6 +36051,8 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 33013879094169330, guid: dd838d9d3469fab43a56a52b5c6014fa,
     type: 2}
   m_PrefabInternal: {fileID: 0}
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
   m_GameObject: {fileID: 1499380409}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1507333009
@@ -40950,9 +41058,16 @@ MonoBehaviour:
 >>>>>>> parent of e4663e3... Beta 1.1.0
 =======
   hexagone:
+<<<<<<< HEAD
   - {fileID: 1796338626}
 >>>>>>> parent of 0ce98fc... lands on grid with number
 >>>>>>> 7920fa99a6449bacb124030e6a3f6c9b72926822
+=======
+  - {fileID: 1005681090}
+  - {fileID: 1533921582}
+  - {fileID: 2100626851}
+  - {fileID: 1303323443}
+>>>>>>> parent of e4663e3... Beta 1.1.0
   test: {fileID: 1199288395}
   CaseActu: 0
   isClick: 0
@@ -43074,6 +43189,7 @@ SpriteRenderer:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 1940763804714194, guid: dd838d9d3469fab43a56a52b5c6014fa,
@@ -43205,10 +43321,16 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 1940763804714194, guid: dd838d9d3469fab43a56a52b5c6014fa,
 >>>>>>> parent of e4663e3... Beta 1.1.0
+=======
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1940763804714194, guid: dd838d9d3469fab43a56a52b5c6014fa,
+>>>>>>> parent of e4663e3... Beta 1.1.0
     type: 2}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - component: {fileID: 1785921834}
@@ -43225,6 +43347,11 @@ GameObject:
   m_Layer: 5
   m_Name: HEXAGON (23)
 >>>>>>> parent of e4663e3... Beta 1.1.0
+=======
+  - component: {fileID: 1785921834}
+  m_Layer: 5
+  m_Name: HEXAGON (23)
+>>>>>>> parent of e4663e3... Beta 1.1.0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43232,6 +43359,9 @@ GameObject:
   m_IsActive: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
 --- !u!4 &1785921834
@@ -43334,6 +43464,7 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1787340411}
 --- !u!1 &1790060495
+<<<<<<< HEAD
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 1835726119871800, guid: dd838d9d3469fab43a56a52b5c6014fa,
@@ -43431,23 +43562,45 @@ SpriteRenderer:
 <<<<<<< HEAD
 =======
 --- !u!1 &1796338626 stripped
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
 GameObject:
-  m_PrefabParentObject: {fileID: 1655457910906852, guid: 634221a959fab424fb6a822b3005cd9b,
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1835726119871800, guid: dd838d9d3469fab43a56a52b5c6014fa,
     type: 2}
+<<<<<<< HEAD
   m_PrefabInternal: {fileID: 789746950}
 >>>>>>> parent of 0ce98fc... lands on grid with number
 --- !u!4 &1796338627 stripped
 =======
+>>>>>>> parent of e4663e3... Beta 1.1.0
+=======
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1790060496}
+  - component: {fileID: 1790060497}
+  m_Layer: 5
+  m_Name: Hexagon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1790060496
 >>>>>>> parent of e4663e3... Beta 1.1.0
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 4269321957478860, guid: dd838d9d3469fab43a56a52b5c6014fa,
     type: 2}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_PrefabInternal: {fileID: 789746950}
 =======
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
 =======
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1790060495}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
@@ -43503,6 +43656,9 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+<<<<<<< HEAD
+>>>>>>> parent of e4663e3... Beta 1.1.0
+=======
 >>>>>>> parent of e4663e3... Beta 1.1.0
 --- !u!1 &1800127418
 GameObject:
@@ -50562,8 +50718,161 @@ MeshFilter:
 --- !u!1 &2100626851
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
+=======
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2100626855}
+  - component: {fileID: 2100626854}
+  - component: {fileID: 2100626853}
+  - component: {fileID: 2100626852}
+  - component: {fileID: 2100626856}
+  m_Layer: 0
+  m_Name: cold mountain (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!60 &2100626852
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2100626851}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.76, y: 1.43}
+    newSize: {x: 1.76, y: 1.43}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.7381892, y: -0.10335853}
+      - {x: 0.4520949, y: 0.3391859}
+      - {x: -0.44854403, y: 0.36900386}
+      - {x: -0.7205839, y: -0.08751857}
+      - {x: -0.31407607, y: -0.5530583}
+      - {x: 0.370364, y: -0.55900395}
+    - - {x: -0.39999998, y: -0.275}
+      - {x: -0.35, y: -0.305}
+      - {x: -0.35, y: -0.295}
+--- !u!114 &2100626853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2100626851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7714a26d964a3fc439ea0818a09c65e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Creature: 0
+  player: {fileID: 1706530510}
+  Value: 000000000100000004000000
+  text:
+  - {fileID: 495759556}
+  - {fileID: 244500198}
+  - {fileID: 2115696103}
+  info: {fileID: 308036736}
+  test: {fileID: 1199288395}
+--- !u!212 &2100626854
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2100626851}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 9adeeae011dff0a4fa102d33b6ae857f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.76, y: 1.43}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!4 &2100626855
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2100626851}
+  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
+  m_LocalPosition: {x: 6.335, y: 3.37, z: 3.68}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+--- !u!50 &2100626856
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2100626851}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!1 &2108585049
+>>>>>>> parent of e4663e3... Beta 1.1.0
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -51255,6 +51564,9 @@ RectTransform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of e4663e3... Beta 1.1.0
+=======
 >>>>>>> parent of e4663e3... Beta 1.1.0
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
@@ -51280,6 +51592,9 @@ RectTransform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of e4663e3... Beta 1.1.0
+=======
 >>>>>>> parent of e4663e3... Beta 1.1.0
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
@@ -51313,6 +51628,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: eae260c1b21e6fb4f8ea870c8c356f8c, type: 3}
 =======
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
 >>>>>>> parent of 0ce98fc... lands on grid with number
     m_FontSize: 40
 =======
@@ -51333,6 +51649,9 @@ MonoBehaviour:
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
 =======
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 16
+>>>>>>> parent of e4663e3... Beta 1.1.0
+=======
     m_FontSize: 16
 >>>>>>> parent of e4663e3... Beta 1.1.0
     m_FontStyle: 0

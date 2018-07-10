@@ -36,6 +36,7 @@ namespace Application
         {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             //info.SetActive(false);
 <<<<<<< HEAD
             Output = GameObject.Find("Output").GetComponent<Text>();
@@ -49,6 +50,9 @@ namespace Application
 =======
 >>>>>>> parent of 0ce98fc... lands on grid with number
 >>>>>>> 7920fa99a6449bacb124030e6a3f6c9b72926822
+=======
+            info.SetActive(false);
+>>>>>>> parent of e4663e3... Beta 1.1.0
         }
 
        void TestFunction()
