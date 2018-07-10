@@ -28,6 +28,7 @@ namespace Application
             text[2] = GameObject.Find("Predator").GetComponent<Text>();
             info = GameObject.Find("Info");
 <<<<<<< HEAD
+<<<<<<< HEAD
             test = GameObject.Find("Simulation").GetComponent<Test>();
 
             gameObject.GetComponent<SpriteRenderer>().sortingOrder = x + y;
@@ -47,6 +48,9 @@ namespace Application
 =======
 
 >>>>>>> parent of e4663e3... Beta 1.1.0
+=======
+            test = GameObject.Find("Simulation").GetComponent<Test>();         
+>>>>>>> parent of 0ce98fc... lands on grid with number
         }
 
         // Update is called once per frame
