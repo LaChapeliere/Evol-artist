@@ -29,10 +29,17 @@ namespace Application
                 Camera c = Camera.main;
                 Event e = Event.current;
                 Vector2 mousePos = new Vector2();
+<<<<<<< HEAD
 
                 mousePos.x = Input.mousePosition.x;
                 mousePos.y = c.pixelHeight - Input.mousePosition.y;
 
+=======
+
+                mousePos.x = Input.mousePosition.x;
+                mousePos.y = c.pixelHeight - Input.mousePosition.y;
+
+>>>>>>> parent of e4663e3... Beta 1.1.0
                 p = c.ScreenToWorldPoint(new Vector3(mousePos.x, -mousePos.y, c.nearClipPlane));
                 transform.position = new Vector3(p.x, p.y + 10, p.z);
             }
@@ -67,6 +74,7 @@ namespace Application
             if(hexa != null)
             {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 NewHexa NHexa = hexa.GetComponent<NewHexa>();
                 if (NHexa.x > 0 && NHexa.x < 8 && NHexa.y > 0 && NHexa.y < 8)
                 {
@@ -85,6 +93,9 @@ namespace Application
 =======
                 Colision(hexa);
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+                Colision(hexa);
+>>>>>>> parent of e4663e3... Beta 1.1.0
             }
         }
     }

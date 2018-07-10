@@ -27,6 +27,9 @@ MonoBehaviour:
   m_MinSize: {x: 950, y: 300}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of e4663e3... Beta 1.1.0
+=======
 >>>>>>> parent of e4663e3... Beta 1.1.0
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
@@ -141,6 +144,7 @@ MonoBehaviour:
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 305
 =======
   controlID: 84
@@ -152,6 +156,9 @@ MonoBehaviour:
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+  controlID: 84
+>>>>>>> parent of e4663e3... Beta 1.1.0
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -181,6 +188,7 @@ MonoBehaviour:
 =======
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 992
     height: 731
   m_MinSize: {x: 200, y: 321}
@@ -202,6 +210,14 @@ MonoBehaviour:
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+    width: 911
+    height: 731
+  m_MinSize: {x: 202, y: 442}
+  m_MaxSize: {x: 4002, y: 8042}
+  vertical: 1
+  controlID: 85
+>>>>>>> parent of e4663e3... Beta 1.1.0
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,10 +242,13 @@ MonoBehaviour:
 =======
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 992
     height: 298
   m_MinSize: {x: 102, y: 121}
 =======
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
     width: 911
     height: 318
   m_MinSize: {x: 202, y: 221}
@@ -239,9 +258,12 @@ MonoBehaviour:
   m_Panes:
   - {fileID: 15}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Selected: 1
   m_LastSelected: 0
 =======
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
   - {fileID: 16}
   m_Selected: 0
   m_LastSelected: 1
@@ -299,6 +321,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 992
     y: 0
     width: 264
@@ -325,10 +348,16 @@ MonoBehaviour:
     width: 234
 >>>>>>> parent of e4663e3... Beta 1.1.0
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+    x: 911
+    y: 0
+    width: 234
+>>>>>>> parent of e4663e3... Beta 1.1.0
     height: 731
   m_MinSize: {x: 202, y: 421}
   m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
   controlID: 253
 =======
@@ -344,6 +373,9 @@ MonoBehaviour:
 >>>>>>> parent of e4663e3... Beta 1.1.0
   controlID: 107
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+  controlID: 107
+>>>>>>> parent of e4663e3... Beta 1.1.0
 --- !u!114 &10
 >>>>>>> parent of e4663e3... Beta 1.1.0
 MonoBehaviour:
@@ -361,6 +393,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     width: 264
     height: 421
@@ -389,6 +422,12 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+    width: 234
+    height: 419
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
+>>>>>>> parent of e4663e3... Beta 1.1.0
   m_ActualView: {fileID: 17}
 >>>>>>> parent of e4663e3... Beta 1.1.0
   m_Panes:
@@ -451,6 +490,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1256
     y: 0
     width: 280
@@ -472,6 +512,11 @@ MonoBehaviour:
     y: 0
     width: 391
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+    x: 1145
+    y: 0
+    width: 391
+>>>>>>> parent of e4663e3... Beta 1.1.0
     height: 731
   m_MinSize: {x: 277, y: 71}
 >>>>>>> parent of e4663e3... Beta 1.1.0
@@ -554,6 +599,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+  m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animation
+    m_Image: {fileID: 1561878555887300916, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 410
+    width: 930
+    height: 392
+  m_PersistentViewDataDictionary: {fileID: 0}
+  m_AnimEditor: {fileID: 0}
+  m_LockTracker:
+    m_IsLocked: 0
+  m_LastSelectedObjectID: 24146
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
   m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
 >>>>>>> parent of e4663e3... Beta 1.1.0
   m_Name: 
@@ -574,6 +648,7 @@ MonoBehaviour:
     height: 412
 =======
     y: 410
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     width: 930
@@ -627,6 +702,11 @@ MonoBehaviour:
     height: 392
   m_PersistentViewDataDictionary: {fileID: 0}
 >>>>>>> parent of e4663e3... Beta 1.1.0
+=======
+    width: 909
+    height: 392
+  m_PersistentViewDataDictionary: {fileID: 0}
+>>>>>>> parent of e4663e3... Beta 1.1.0
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
   m_Stats: 0
@@ -656,16 +736,22 @@ MonoBehaviour:
       x: 0
       y: 17
 <<<<<<< HEAD
+<<<<<<< HEAD
       width: 990
       height: 395
     m_Scale: {x: 1.0609, y: 1.0609}
     m_Translation: {x: 495, y: 207.7312}
 =======
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
       width: 909
       height: 375
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 454.5, y: 187.5}
+<<<<<<< HEAD
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -673,11 +759,14 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
       x: -466.585
       y: -195.80658
       width: 933.17
       height: 372.32538
 =======
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
       x: -454.5
       y: -187.5
       width: 909
@@ -688,10 +777,14 @@ MonoBehaviour:
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 990, y: 412}
 =======
   m_LastWindowPixelSize: {x: 909, y: 392}
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+  m_LastWindowPixelSize: {x: 909, y: 392}
+>>>>>>> parent of e4663e3... Beta 1.1.0
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -718,9 +811,12 @@ MonoBehaviour:
     x: 0
     y: 92
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 990
     height: 284
 =======
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
     width: 909
     height: 297
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
@@ -732,6 +828,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 0.5400009, y: -1.7215763, z: 6.904564}
     speed: 2
     m_Value: {x: 0.5400009, y: -1.7215763, z: 6.904564}
@@ -740,6 +837,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -5.2705617, y: -1.749253, z: -0.59765625}
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+    m_Target: {x: -5.2705617, y: -1.749253, z: -0.59765625}
+    speed: 2
+    m_Value: {x: -5.2705617, y: -1.749253, z: -0.59765625}
+>>>>>>> parent of e4663e3... Beta 1.1.0
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -772,6 +874,7 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 5.43222
     speed: 2
     m_Value: 5.43222
@@ -780,6 +883,11 @@ MonoBehaviour:
     speed: 2
     m_Value: 27.82566
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+    m_Target: 27.82566
+    speed: 2
+    m_Value: 27.82566
+>>>>>>> parent of e4663e3... Beta 1.1.0
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -790,6 +898,7 @@ MonoBehaviour:
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
   m_LastLockedObject: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_ViewIsLockedToObject: 1
 --- !u!114 &15
@@ -804,6 +913,10 @@ MonoBehaviour:
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+  m_ViewIsLockedToObject: 0
+--- !u!114 &16
+>>>>>>> parent of e4663e3... Beta 1.1.0
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -825,6 +938,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 92
+<<<<<<< HEAD
 <<<<<<< HEAD
     width: 990
     height: 277
@@ -878,6 +992,11 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
 >>>>>>> parent of e4663e3... Beta 1.1.0
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+    width: 930
+    height: 297
+  m_PersistentViewDataDictionary: {fileID: 0}
+>>>>>>> parent of e4663e3... Beta 1.1.0
 --- !u!114 &17
 >>>>>>> parent of e4663e3... Beta 1.1.0
 MonoBehaviour:
@@ -899,6 +1018,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 994
     y: 92
@@ -932,10 +1052,16 @@ MonoBehaviour:
     y: 92
     width: 230
 >>>>>>> parent of e4663e3... Beta 1.1.0
+=======
+    x: 913
+    y: 92
+    width: 230
+>>>>>>> parent of e4663e3... Beta 1.1.0
     height: 398
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -958,6 +1084,11 @@ MonoBehaviour:
     m_ExpandedIDs: e2fbffff00000000
 >>>>>>> parent of e4663e3... Beta 1.1.0
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+    m_SelectedIDs: 96010000
+    m_LastClickedID: 0
+    m_ExpandedIDs: e2fbffff00000000
+>>>>>>> parent of e4663e3... Beta 1.1.0
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1036,6 +1167,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 994
     y: 513
     width: 260
@@ -1047,6 +1179,11 @@ MonoBehaviour:
     x: 934
     y: 511
     width: 284
+=======
+    x: 913
+    y: 511
+    width: 230
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
     x: 913
     y: 511
@@ -1077,6 +1214,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
+<<<<<<< HEAD
 <<<<<<< HEAD
     - Assets/Scripts/Environement
 =======
@@ -1111,6 +1249,14 @@ MonoBehaviour:
 <<<<<<< HEAD
   - Assets/Scripts/Environement
   m_LastFoldersGridSize: 57
+=======
+    - Assets/Scenes/SampleScene_Profiles
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Scenes/SampleScene_Profiles
+  m_LastFoldersGridSize: -1
+>>>>>>> parent of e4663e3... Beta 1.1.0
   m_LastProjectPath: C:\Users\Utilisateur.UTILISA-1R91N3M\Documents\GitHub\Evol-artist\UnityProject
 =======
   - Assets/Scenes/SampleScene_Profiles
@@ -1122,6 +1268,7 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_SelectedIDs: f20c0000
     m_LastClickedID: 3314
@@ -1149,6 +1296,11 @@ MonoBehaviour:
     m_ExpandedIDs: 00000000e20900002e0a00002a0e000000ca9a3bffffff7f
 >>>>>>> parent of e4663e3... Beta 1.1.0
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+    m_SelectedIDs: f00a0000
+    m_LastClickedID: 2800
+    m_ExpandedIDs: 00000000e20900002e0a00002a0e000000ca9a3bffffff7f
+>>>>>>> parent of e4663e3... Beta 1.1.0
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1177,6 +1329,7 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000dc090000240a0000d60b0000440d00007e0e000000ca9a3bffffff7f
 =======
 <<<<<<< HEAD
@@ -1193,6 +1346,9 @@ MonoBehaviour:
     m_ExpandedIDs: 00000000e20900002e0a00002a0e0000
 >>>>>>> parent of e4663e3... Beta 1.1.0
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+    m_ExpandedIDs: 00000000e20900002e0a00002a0e0000
+>>>>>>> parent of e4663e3... Beta 1.1.0
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1250,6 +1406,7 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 57
   m_DirectoriesAreaWidth: 124
@@ -1259,6 +1416,9 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
     m_ScrollPosition: {x: 0, y: 52}
+=======
+    m_ScrollPosition: {x: 0, y: 0}
+>>>>>>> parent of e4663e3... Beta 1.1.0
 =======
     m_ScrollPosition: {x: 0, y: 0}
 >>>>>>> parent of e4663e3... Beta 1.1.0
@@ -1291,6 +1451,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 0
     y: 467
@@ -1391,6 +1552,11 @@ MonoBehaviour:
 >>>>>>> parent of e4663e3... Beta 1.1.0
     width: 389
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+    x: 1147
+    y: 92
+    width: 389
+>>>>>>> parent of e4663e3... Beta 1.1.0
     height: 710
 >>>>>>> parent of e4663e3... Beta 1.1.0
   m_PersistentViewDataDictionary: {fileID: 0}

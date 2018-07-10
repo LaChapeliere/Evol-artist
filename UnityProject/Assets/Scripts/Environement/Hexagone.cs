@@ -23,6 +23,7 @@ namespace Application
         void Start()
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             player = GameObject.Find("cat").GetComponent<PlayerCreature>();
             text[0] = GameObject.Find("Humidity").GetComponent<Text>();
             text[1] = GameObject.Find("Nourriture").GetComponent<Text>();
@@ -36,6 +37,9 @@ namespace Application
 =======
 
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+
+>>>>>>> parent of e4663e3... Beta 1.1.0
         }
 
         // Update is called once per frame

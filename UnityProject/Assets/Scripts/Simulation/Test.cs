@@ -38,11 +38,15 @@ namespace Application
         void Start()
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             //info.SetActive(false);
             Output = GameObject.Find("Output").GetComponent<Text>();
 =======
             info.SetActive(false);
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+            info.SetActive(false);
+>>>>>>> parent of e4663e3... Beta 1.1.0
         }
 
        void TestFunction()

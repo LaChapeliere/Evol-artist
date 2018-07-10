@@ -14,6 +14,7 @@ Cmd: initializeCompiler
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
@@ -101,6 +102,8 @@ Cmd: initializeCompiler
 >>>>>>> parent of e4663e3... Beta 1.1.0
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
 Cmd: compileSnippet
   api=4 type=0 insize=1564 outsize=1550 kw=UNITY_PASS_FORWARDBASE DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
 Cmd: compileSnippet
@@ -115,11 +118,14 @@ Cmd: compileSnippet
   api=4 type=1 insize=1564 outsize=5742 kw=UNITY_PASS_FORWARDBASE DIRECTIONAL _ALPHAPREMULTIPLY_ON pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of e4663e3... Beta 1.1.0
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
 =======
 >>>>>>> parent of e4663e3... Beta 1.1.0
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
@@ -135,4 +141,7 @@ Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
+<<<<<<< HEAD
 >>>>>>> a5ec8ee236a120813838b939dcc68c6e85e45707
+=======
+>>>>>>> parent of e4663e3... Beta 1.1.0
